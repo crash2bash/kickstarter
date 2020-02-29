@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url(/src/fonts/HelveticaNeueCyr-Roman.woff2) format(woff2); }
+
+html {
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 21px; }
+
+body {
+  margin: 0;
+  width: 320px;
+  background-color: #f7f7f7; }
+
+.header-container {
+  width: 240px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 22px; }
+
+.header__logo {
+  padding: 28px 0 22px 0; }
+
+.header__sandwich {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 24px;
+  height: 14px;
+  padding: 5px 5px;
+  background-image: url(/img/sandwhich.svg);
+  background-repeat: no-repeat;
+  cursor: pointer; }
+
+.navigation {
+  display: none; }
+
+.navigation-list {
+  list-style: none; }
+
+.navigation-list__link {
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }

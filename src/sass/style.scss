@@ -1,0 +1,18 @@
+@import './src/sass/variables.scss';
+
+@font-face {
+  font-family: $ff;
+  src: url(/src/fonts/HelveticaNeueCyr-Roman.woff2) format(woff2);
+}
+
+html {
+  @include font-standard;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  background-color: #f7f7f7;
+}
+
+@import './navigation.scss';

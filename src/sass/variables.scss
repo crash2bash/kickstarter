@@ -1,0 +1,9 @@
+$ff: "Helvetica";
+$fs: 14px;
+$lh: 21px;
+
+@mixin font-standard {
+  font-family: $ff;
+  font-size: $fs;
+  line-height: $lh;
+}

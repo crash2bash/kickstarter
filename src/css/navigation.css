@@ -1,0 +1,32 @@
+.header-container {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 22px; }
+
+.header__logo {
+  padding: 28px 0 22px 0; }
+
+.header__sandwich {
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 14px;
+  padding: 5px 5px;
+  background-image: url(/img/sandwhich.svg);
+  background-repeat: no-repeat;
+  cursor: pointer; }
+
+.navigation {
+  display: none; }
+
+.navigation-list {
+  list-style: none; }
+
+.navigation-list__link {
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
