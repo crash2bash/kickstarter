@@ -6,6 +6,11 @@
 
 .arrow-right--disable {
   background-image: url(../img/scroll_right_disable.svg);
+
+  &:hover {
+    background-image: url(../img/scroll_right_disable.svg);
+    cursor: default;
+  }
 }
 
 .arrow-right--enable {
@@ -14,6 +19,11 @@
 
 .arrow-left--disable {
   background-image: url(../img/scroll_left.svg);
+
+  &:hover {
+    background-image: url(../img/scroll_left.svg);
+    cursor: default;
+  }
 }
 
 .arrow-left--enable {

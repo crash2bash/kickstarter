@@ -155,21 +155,26 @@ body {
   padding: 10px 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  cursor: pointer; }
+  align-items: center; }
 
 .post-scrolling__left {
   display: block;
   background-image: url(../img/scroll_left.svg);
   width: 48px;
-  height: 13px; }
+  height: 13px;
+  cursor: pointer; }
+  .post-scrolling__left:hover {
+    background-image: url(../img/left_hover.svg); }
 
 .post-scrolling__right {
   margin-left: -5px;
   display: block;
   background-image: url(../img/scroll_right.svg);
   width: 48px;
-  height: 13px; }
+  height: 13px;
+  cursor: pointer; }
+  .post-scrolling__right:hover {
+    background-image: url(../img/right_hover.svg); }
 
 .post-scrolling__change {
   font-family: "Din";
@@ -412,12 +417,18 @@ body {
 
 .arrow-right--disable {
   background-image: url(../img/scroll_right_disable.svg); }
+  .arrow-right--disable:hover {
+    background-image: url(../img/scroll_right_disable.svg);
+    cursor: default; }
 
 .arrow-right--enable {
   background-image: url(../img/scroll_right.svg); }
 
 .arrow-left--disable {
   background-image: url(../img/scroll_left.svg); }
+  .arrow-left--disable:hover {
+    background-image: url(../img/scroll_left.svg);
+    cursor: default; }
 
 .arrow-left--enable {
   background-image: url(../img/scroll_left_enable.svg); }

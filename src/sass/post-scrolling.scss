@@ -14,8 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  cursor: pointer;
 }
 
 .post-scrolling__left {
@@ -23,6 +21,12 @@
   background-image: url(../img/scroll_left.svg);
   width: 48px;
   height: 13px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-image: url(../img/left_hover.svg);
+  }
 }
 
 .post-scrolling__right {
@@ -31,6 +35,12 @@
   background-image: url(../img/scroll_right.svg);
   width: 48px;
   height: 13px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-image: url(../img/right_hover.svg);
+  }
 }
 
 .post-scrolling__change {
