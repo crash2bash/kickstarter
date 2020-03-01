@@ -1,0 +1,59 @@
+@import './src/sass/variables.scss';
+
+.feautures {
+  margin-bottom: 45px;
+  padding: 45px 0;
+  background-color: #f2f2f2;
+}
+
+.mobile-content {
+  width: $mc-width;
+  margin: 0 auto;
+}
+
+.feautures__title {
+  margin: 0 0 51px 0;
+
+  font-family: $ff-dbold;
+  font-size: $fs-b;
+  text-transform: uppercase;
+}
+
+.feautures__list {
+  @include reset;
+  list-style: none;
+}
+
+.feautures__item-title {
+  margin-bottom: 20px;
+  font-family: $ff-d;
+  font-size: $fs-b - 7;
+  line-height: $lh + 11;
+  text-transform: uppercase;
+  
+  color: #0C797A;
+}
+
+.feautures__inner-list {
+  font-family: $ff-hmedium;
+  padding: 0;
+  margin-left: 15px;
+  list-style: disc;
+}
+
+.feautures__list-item {
+  margin-bottom: 50px;
+}
+
+.feautures__inner-list-item {
+  margin-bottom: 10px;
+}
+
+.post-scrolling__feautures {
+  margin-bottom: 8px;
+}
+
+.feautures__image {
+  object-fit: cover;
+  object-position: left;
+}

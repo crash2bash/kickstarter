@@ -1,0 +1,63 @@
+@import './src/sass/variables.scss';
+
+.about-us {
+  margin-bottom: 97px;
+}
+
+.about-us__title {
+  width: 260px;
+  margin: 0 auto 50px auto;
+
+  font-family: $ff-dbold;
+  font-size: $fs-b;
+  line-height: $lh-b;
+
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.about-us__img {
+  display: block;
+  width: $mc-width;
+  margin: 0 auto 29px auto;
+}
+
+.about-us__text {
+  width: $mc-width;
+  margin: 0 auto 30px auto;
+
+  color: #7c7c7c;
+}
+
+.about-us__link {
+  position: relative;
+  display: block;
+  width: $mc-width;
+  margin: 0 auto;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0DB2B3;
+  outline: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23%;
+    height: 1px;
+
+    top: 110%;
+    left: 0;
+    background-color: #0DB2B3;
+
+    transition: width 0.5s ease-in-out;
+  }
+
+  &:hover, 
+  &:active, 
+  &:focus {
+    &::after {
+      width: 56%;
+    }
+  }
+}

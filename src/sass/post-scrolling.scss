@@ -1,14 +1,16 @@
 @import './src/sass/variables.scss';
 
 .post-scrolling {
-  width: 50px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .post-scrolling__nav {
   width: 100px;
-  padding: 15px 20px;
-  margin: 0 auto;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,4 +47,8 @@
   line-height: $lh - 7;
 
   color: #BDBDBD;
+}
+
+.post-scrolling__advantages {
+  margin-bottom: 80px;
 }

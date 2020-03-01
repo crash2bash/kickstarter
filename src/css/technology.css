@@ -1,0 +1,50 @@
+.technology {
+  margin-bottom: 45px; }
+
+.technology__title {
+  width: 260px;
+  margin: 0 auto;
+  font-family: "Din Bold";
+  font-size: 37px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #333333; }
+
+.technology__scrolling {
+  margin-top: -35px;
+  margin-bottom: 90px; }
+
+.technology__review {
+  position: relative;
+  width: 260px;
+  margin: 0 auto 40px auto;
+  font-family: "Din Bold";
+  text-align: center; }
+  .technology__review::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/citate.svg);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 171px;
+    top: -15%;
+    left: 10%; }
+
+.technology__review-photo {
+  display: block;
+  margin: 0 auto 20px auto; }
+
+.technology__review-author {
+  margin: 0 0 7px 0;
+  font-family: "Helvetica Medium";
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #333333; }
+
+.technology__review-position {
+  margin: 0;
+  text-align: center;
+  font-family: "Helvetica Light";
+  line-height: 17px;
+  color: #7c7c7c; }

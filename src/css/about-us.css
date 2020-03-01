@@ -1,0 +1,42 @@
+.about-us {
+  margin-bottom: 97px; }
+
+.about-us__title {
+  width: 260px;
+  margin: 0 auto 50px auto;
+  font-family: "Din Bold";
+  font-size: 37px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #333333; }
+
+.about-us__img {
+  display: block;
+  width: 260px;
+  margin: 0 auto 29px auto; }
+
+.about-us__text {
+  width: 260px;
+  margin: 0 auto 30px auto;
+  color: #7c7c7c; }
+
+.about-us__link {
+  position: relative;
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0DB2B3;
+  outline: none; }
+  .about-us__link::after {
+    content: "";
+    position: absolute;
+    width: 23%;
+    height: 1px;
+    top: 110%;
+    left: 0;
+    background-color: #0DB2B3;
+    transition: width 0.5s ease-in-out; }
+  .about-us__link:hover::after, .about-us__link:active::after, .about-us__link:focus::after {
+    width: 56%; }

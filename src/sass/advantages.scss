@@ -2,13 +2,14 @@
 
 .advantages__list {
   @include reset;
-  margin-bottom: 183px;
+  margin-bottom: 35px;
 
   list-style: none;
 }
 
 .advantages__list-item {
   position: relative;
+  margin-bottom: 187px;
 
   &::before {
     position: absolute;
@@ -35,9 +36,13 @@
   background-image: url(../img/lighting.svg);
 }
 
+.advantages__list-item:last-child {
+  margin-bottom: 0;
+}
+
 .advantages__title {
   position: relative;
-  width: 260px;
+  width: $mc-width;
   margin: 0 auto 50px auto;
 
   font-family: $ff-d;
@@ -50,9 +55,13 @@
 }
 
 .advantages__text {
-  width: 260px;
-  margin: 0 auto 187px auto;
+  width: $mc-width;
+  margin: 0 auto;
 
   text-align: center;
   color: #7c7c7c;
+}
+
+.advantages__video {
+  margin-bottom: 89px;
 }

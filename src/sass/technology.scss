@@ -1,0 +1,67 @@
+@import './src/sass/variables.scss';
+
+.technology {
+  margin-bottom: 45px;
+}
+
+.technology__title {
+  width: $mc-width;
+  margin: 0 auto;
+
+  font-family: $ff-dbold;
+  font-size: $fs-b;
+  line-height: $lh-b - 9;
+  text-transform: uppercase;
+
+  color: $text-color;
+}
+
+.technology__scrolling {
+  margin-top: -35px;
+  margin-bottom: 90px;
+}
+
+.technology__review {
+  position: relative;
+  width: $mc-width;
+  margin: 0 auto 40px auto;
+
+  font-family: $ff-dbold;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/citate.svg);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 171px;
+
+    top: -15%;
+    left: 10%;
+  }
+}
+
+.technology__review-photo {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.technology__review-author {
+  margin: 0 0 7px 0;
+
+  font-family: $ff-hmedium;
+  font-size: $fs + 2;
+  line-height: $lh + 6;
+  text-align: center;
+  color: $text-color;
+}
+
+.technology__review-position {
+  margin: 0;
+  text-align: center;
+
+  font-family: $ff-hlight;
+  line-height: $lh - 4;
+  color: #7c7c7c;
+}

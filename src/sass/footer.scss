@@ -1,0 +1,28 @@
+@import './src/sass/variables.scss';
+
+.footer__container {
+  width: $mc-width;
+  margin: 0 auto;
+}
+
+.footer__logo-link {
+  display: none;
+}
+
+.footer__socials {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  @include reset;
+  margin-bottom: 23px;
+  list-style: none;
+}
+
+.footer__rights {
+  font-family: $ff-hlight;
+  text-align: center;
+  font-size: $fs - 2;
+
+  color: #bdbdbd;
+}

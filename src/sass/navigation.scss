@@ -1,7 +1,7 @@
 @import './src/sass/variables.scss';
 
 .header-container {
-  width: 240px;
+  width: $mc-width;
   display: flex;
   justify-content: space-between;
   align-items: center;
