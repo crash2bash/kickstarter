@@ -1,15 +1,17 @@
 $mc-width: 260px;
+
 $ff-h: "Helvetica";
 $ff-hmedium: "Helvetica Medium";
 $ff-hlight: "Helvetica Light";
 $ff-db: "Din Black";
 $ff-dbold: "Din Bold";
 $ff-d: "Din";
-$text-color: #333333;
 $fs: 14px;
 $fs-b: 37px;
 $lh: 21px;
 $lh-b: 55px;
+
+$text-color: #333333;
 
 @mixin font-standard {
   font-family: $ff-h;

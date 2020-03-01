@@ -1,0 +1,33 @@
+@import './src/sass/variables.scss';
+
+.header-container {
+  width: $mc-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.header__logo {
+  padding: 28px 0 22px 0;
+}
+
+.header__sandwich {
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 14px;
+  padding: 5px 5px;
+
+  background-image: url(/img/sandwhich.svg);
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header__sandwich {
+    display: none;
+  }
+}

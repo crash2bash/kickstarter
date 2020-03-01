@@ -54,6 +54,10 @@ body {
   background-repeat: no-repeat;
   cursor: pointer; }
 
+@media (min-width: 768px) {
+  .header__sandwich {
+    display: none; } }
+
 .navigation {
   display: none; }
 
@@ -65,6 +69,10 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex; } }
 
 .content__image {
   margin-bottom: 40px;
@@ -494,3 +502,7 @@ body {
   margin: -1px;
   padding: 0;
   border: 0; }
+
+@media (min-width: 768px) {
+  body {
+    width: 768px; } }
