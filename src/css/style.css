@@ -139,9 +139,6 @@ body {
   text-align: center;
   color: #7c7c7c; }
 
-.scroll {
-  display: none; }
-
 .video__youtube {
   width: 320px;
   margin-bottom: 89px; }
@@ -409,6 +406,21 @@ body {
   text-align: center;
   font-size: 12px;
   color: #bdbdbd; }
+
+.scroll {
+  display: none; }
+
+.arrow-right--disable {
+  background-image: url(../img/scroll_right_disable.svg); }
+
+.arrow-right--enable {
+  background-image: url(../img/scroll_right.svg); }
+
+.arrow-left--disable {
+  background-image: url(../img/scroll_left.svg); }
+
+.arrow-left--enable {
+  background-image: url(../img/scroll_left_enable.svg); }
 
 .visually-hidden {
   position: absolute;

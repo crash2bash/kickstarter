@@ -1,0 +1,21 @@
+@import './src/sass/variables.scss';
+
+.scroll {
+  display: none;
+}
+
+.arrow-right--disable {
+  background-image: url(../img/scroll_right_disable.svg);
+}
+
+.arrow-right--enable {
+  background-image: url(../img/scroll_right.svg);
+}
+
+.arrow-left--disable {
+  background-image: url(../img/scroll_left.svg);
+}
+
+.arrow-left--enable {
+  background-image: url(../img/scroll_left_enable.svg);
+}
