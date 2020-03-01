@@ -1,3 +1,39 @@
+.animation-show {
+  animation: show 1s ease-out forwards; }
+
+.scroll {
+  display: none; }
+
+.arrow-right--disable {
+  background-image: url(../img/scroll_right_disable.svg); }
+  .arrow-right--disable:hover {
+    background-image: url(../img/scroll_right_disable.svg);
+    cursor: default; }
+
+.arrow-right--enable {
+  background-image: url(../img/scroll_right.svg); }
+
+.arrow-left--disable {
+  background-image: url(../img/scroll_left.svg); }
+  .arrow-left--disable:hover {
+    background-image: url(../img/scroll_left.svg);
+    cursor: default; }
+
+.arrow-left--enable {
+  background-image: url(../img/scroll_left_enable.svg); }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 25%; }
+  50% {
+    opacity: 50%; }
+  75% {
+    opacity: 75%; }
+  100% {
+    opacity: 100%; } }
+
 .technology {
   margin-bottom: 90px; }
 
@@ -14,7 +50,8 @@
   text-transform: uppercase; }
 
 .technology__scrolling {
-  margin-top: -35px; }
+  margin-top: -35px;
+  margin-bottom: 90px; }
 
 .technology__review {
   position: relative;

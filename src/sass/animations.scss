@@ -1,5 +1,9 @@
 @import './src/sass/variables.scss';
 
+.animation-show {
+  animation: show 1s ease-out forwards;
+}
+
 .scroll {
   display: none;
 }
@@ -28,4 +32,26 @@
 
 .arrow-left--enable {
   background-image: url(../img/scroll_left_enable.svg);
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 25%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  75% {
+    opacity: 75%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }

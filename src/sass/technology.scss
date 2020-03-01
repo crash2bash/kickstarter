@@ -1,4 +1,5 @@
 @import './src/sass/variables.scss';
+@import './src/sass/animations.scss';
 
 .technology {
   margin-bottom: 90px;
@@ -19,6 +20,7 @@
 
 .technology__scrolling {
   margin-top: -35px;
+  margin-bottom: 90px;
 }
 
 .technology__review {
