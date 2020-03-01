@@ -1,0 +1,48 @@
+@import './src/sass/variables.scss';
+
+.post-scrolling {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.post-scrolling__nav {
+  width: 100px;
+  padding: 15px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.post-scrolling__left {
+  display: block;
+  background-image: url(../img/scroll_left.svg);
+  width: 48px;
+  height: 13px;
+}
+
+.post-scrolling__right {
+  margin-left: -5px;
+  display: block;
+  background-image: url(../img/scroll_right.svg);
+  width: 48px;
+  height: 13px;
+}
+
+.post-scrolling__change {
+  font-family: $ff-d;
+  font-size: $fs + 2;
+  line-height: $lh - 1;
+
+  color: $text-color;
+}
+
+.post-scrolling__static {
+  font-family: $ff-d;
+  font-size: $fs - 3;
+  line-height: $lh - 7;
+
+  color: #BDBDBD;
+}

@@ -1,3 +1,5 @@
+@import './src/sass/variables.scss';
+
 .header-container {
   width: 240px;
   display: flex;
@@ -36,7 +38,7 @@
 }
 
 .navigation-list__link {
-  color: #333333;
+  color: $text-color;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;

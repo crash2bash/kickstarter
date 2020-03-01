@@ -1,0 +1,58 @@
+@import './src/sass/variables.scss';
+
+.advantages__list {
+  @include reset;
+  margin-bottom: 183px;
+
+  list-style: none;
+}
+
+.advantages__list-item {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    background-image: url(../img/futuristic_design.svg);
+    width: 58px;
+    height: 46px;
+
+    margin-top: -90px;
+    left: 42%;
+  }
+}
+
+.advantages__list-item--speaker::before {
+  background-image: url(../img/speaker.svg);
+}
+
+.advantages__list-item--multiroom::before {
+  background-image: url(../img/multiroom.svg);
+}
+
+.advantages__list-item--lighting::before {
+  background-image: url(../img/lighting.svg);
+}
+
+.advantages__title {
+  position: relative;
+  width: 260px;
+  margin: 0 auto 50px auto;
+
+  font-family: $ff-d;
+  font-size: $fs + 10;
+  line-height: $lh + 9;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.advantages__text {
+  width: 260px;
+  margin: 0 auto 187px auto;
+
+  text-align: center;
+  color: #7c7c7c;
+}

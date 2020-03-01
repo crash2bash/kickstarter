@@ -1,8 +1,18 @@
 @import './src/sass/variables.scss';
 
 @font-face {
-  font-family: $ff;
-  src: url(/src/fonts/HelveticaNeueCyr-Roman.woff2) format(woff2);
+  font-family: $ff-h;
+  src: url("/fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: $ff-d;
+  src: url("/fonts/DINPro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: $ff-db;
+  src: url("/fonts/DINPro-Black.woff2") format("woff2");
 }
 
 html {
@@ -16,3 +26,6 @@ body {
 }
 
 @import './navigation.scss';
+@import './content.scss';
+@import './advantages.scss';
+@import './post-scrolling.scss';

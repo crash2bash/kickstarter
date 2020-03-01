@@ -1,0 +1,31 @@
+@import './src/sass/variables.scss';
+
+.content__image {
+  margin-bottom: 40px;
+
+  object-fit: cover;
+  object-position: left;
+}
+
+.content__title {
+  margin: 0 0 23px 0;
+
+  font-family: $ff-db;
+  font-size: 44px;
+  line-height: 57px;
+
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color;
+}
+
+.content__text {
+  width: 260px;
+  margin: 0 auto 187px auto;
+
+  font-size: $fs + 2;
+  line-height: $lh + 3;
+
+  text-align: center;
+  color: $text-color;
+}

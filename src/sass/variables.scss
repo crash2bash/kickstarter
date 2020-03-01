@@ -1,9 +1,17 @@
-$ff: "Helvetica";
+$ff-h: "Helvetica";
+$ff-db: "Din Bold";
+$ff-d: "Din";
+$text-color: #333333;
 $fs: 14px;
 $lh: 21px;
 
 @mixin font-standard {
-  font-family: $ff;
+  font-family: $ff-h;
   font-size: $fs;
   line-height: $lh;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
 }
