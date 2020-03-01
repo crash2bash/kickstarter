@@ -1,29 +1,28 @@
 @import './src/sass/variables.scss';
 
 .technology {
-  margin-bottom: 45px;
+  margin-bottom: 90px;
+}
+
+.technology__container {
+  @include mc-width;
 }
 
 .technology__title {
-  width: $mc-width;
-  margin: 0 auto;
+  @include mc-width;
 
   font-family: $ff-dbold;
   font-size: $fs-b;
   line-height: $lh-b - 9;
   text-transform: uppercase;
-
-  color: $text-color;
 }
 
 .technology__scrolling {
   margin-top: -35px;
-  margin-bottom: 90px;
 }
 
 .technology__review {
   position: relative;
-  width: $mc-width;
   margin: 0 auto 40px auto;
 
   font-family: $ff-dbold;
@@ -54,7 +53,6 @@
   font-size: $fs + 2;
   line-height: $lh + 6;
   text-align: center;
-  color: $text-color;
 }
 
 .technology__review-position {

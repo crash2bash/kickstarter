@@ -4,27 +4,27 @@
   margin-bottom: 97px;
 }
 
+.about-us__container {
+  @include mc-width;
+}
+
 .about-us__title {
-  width: 260px;
-  margin: 0 auto 50px auto;
+  margin-bottom: 50px;
 
   font-family: $ff-dbold;
   font-size: $fs-b;
   line-height: $lh-b;
 
   text-transform: uppercase;
-  color: $text-color;
 }
 
 .about-us__img {
   display: block;
-  width: $mc-width;
-  margin: 0 auto 29px auto;
+  margin-bottom: 29px;
 }
 
 .about-us__text {
-  width: $mc-width;
-  margin: 0 auto 30px auto;
+  margin-bottom: 30px;
 
   color: #7c7c7c;
 }
@@ -32,8 +32,6 @@
 .about-us__link {
   position: relative;
   display: block;
-  width: $mc-width;
-  margin: 0 auto;
 
   text-decoration: none;
   text-transform: uppercase;

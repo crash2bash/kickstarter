@@ -21,3 +21,8 @@ $lh-b: 55px;
   margin: 0;
   padding: 0;
 }
+
+@mixin mc-width {
+  width: $mc-width;
+  margin: 0 auto;
+}

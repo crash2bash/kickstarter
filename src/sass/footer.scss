@@ -1,8 +1,7 @@
 @import './src/sass/variables.scss';
 
 .footer__container {
-  width: $mc-width;
-  margin: 0 auto;
+  @include mc-width;
 }
 
 .footer__logo-link {

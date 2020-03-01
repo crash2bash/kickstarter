@@ -88,6 +88,13 @@ body {
   text-align: center;
   color: #333333; }
 
+.advantages {
+  margin-bottom: 89px; }
+
+.advantages__container {
+  width: 260px;
+  margin: 0 auto; }
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -96,7 +103,7 @@ body {
 
 .advantages__list-item {
   position: relative;
-  margin-bottom: 187px; }
+  margin-bottom: 50px; }
   .advantages__list-item::before {
     position: absolute;
     content: "";
@@ -120,8 +127,7 @@ body {
 
 .advantages__title {
   position: relative;
-  width: 260px;
-  margin: 0 auto 50px auto;
+  margin-bottom: 50px;
   font-family: "Din";
   font-size: 24px;
   line-height: 30px;
@@ -130,12 +136,14 @@ body {
   color: #333333; }
 
 .advantages__text {
-  width: 260px;
-  margin: 0 auto;
   text-align: center;
   color: #7c7c7c; }
 
-.advantages__video {
+.scroll {
+  display: none; }
+
+.video__youtube {
+  width: 320px;
   margin-bottom: 89px; }
 
 .post-scrolling {
@@ -184,30 +192,28 @@ body {
 .about-us {
   margin-bottom: 97px; }
 
-.about-us__title {
+.about-us__container {
   width: 260px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto; }
+
+.about-us__title {
+  margin-bottom: 50px;
   font-family: "Din Bold";
   font-size: 37px;
   line-height: 55px;
-  text-transform: uppercase;
-  color: #333333; }
+  text-transform: uppercase; }
 
 .about-us__img {
   display: block;
-  width: 260px;
-  margin: 0 auto 29px auto; }
+  margin-bottom: 29px; }
 
 .about-us__text {
-  width: 260px;
-  margin: 0 auto 30px auto;
+  margin-bottom: 30px;
   color: #7c7c7c; }
 
 .about-us__link {
   position: relative;
   display: block;
-  width: 260px;
-  margin: 0 auto;
   text-decoration: none;
   text-transform: uppercase;
   color: #0DB2B3;
@@ -225,7 +231,11 @@ body {
     width: 56%; }
 
 .technology {
-  margin-bottom: 45px; }
+  margin-bottom: 90px; }
+
+.technology__container {
+  width: 260px;
+  margin: 0 auto; }
 
 .technology__title {
   width: 260px;
@@ -233,16 +243,13 @@ body {
   font-family: "Din Bold";
   font-size: 37px;
   line-height: 46px;
-  text-transform: uppercase;
-  color: #333333; }
+  text-transform: uppercase; }
 
 .technology__scrolling {
-  margin-top: -35px;
-  margin-bottom: 90px; }
+  margin-top: -35px; }
 
 .technology__review {
   position: relative;
-  width: 260px;
   margin: 0 auto 40px auto;
   font-family: "Din Bold";
   text-align: center; }
@@ -265,8 +272,7 @@ body {
   font-family: "Helvetica Medium";
   font-size: 16px;
   line-height: 27px;
-  text-align: center;
-  color: #333333; }
+  text-align: center; }
 
 .technology__review-position {
   margin: 0;
