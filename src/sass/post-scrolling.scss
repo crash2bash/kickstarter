@@ -62,3 +62,9 @@
 .post-scrolling__advantages {
   margin-bottom: 80px;
 }
+
+@media (min-width: 768px) {
+  .post-scrolling__advantages {
+    display: none;
+  }
+}

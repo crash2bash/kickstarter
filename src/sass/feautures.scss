@@ -57,3 +57,32 @@
   object-fit: cover;
   object-position: left;
 }
+
+@media (min-width: $tablet) {
+  .feautures {
+    margin-bottom: 130px;
+    padding: 0;
+
+  &__title {
+    font-size: $fs-b + 19;
+    line-height: $lh-b + 15;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: grid;
+  }
+
+  &__item-title {
+    font-size: $fs-b - 3;
+    line-height: $lh * 2;
+    margin: 0 0 38px 0;
+  }
+
+  &__inner-list-item {
+    font-family: $ff-h;
+    font-size: $fs + 2;
+    line-height: $lh - 2;
+  }
+  }
+}

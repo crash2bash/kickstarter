@@ -44,3 +44,22 @@
 .feautures__image {
   object-fit: cover;
   object-position: left; }
+
+@media (min-width: 768px) {
+  .feautures {
+    margin-bottom: 130px;
+    padding: 0; }
+    .feautures__title {
+      font-size: 56px;
+      line-height: 70px;
+      margin-bottom: 50px; }
+    .feautures__list {
+      display: grid; }
+    .feautures__item-title {
+      font-size: 34px;
+      line-height: 42px;
+      margin: 0 0 38px 0; }
+    .feautures__inner-list-item {
+      font-family: "Helvetica";
+      font-size: 16px;
+      line-height: 19px; } }

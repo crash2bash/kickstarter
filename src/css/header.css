@@ -21,4 +21,6 @@
 
 @media (min-width: 768px) {
   .header__sandwich {
-    display: none; } }
+    display: none; }
+  .header-container {
+    width: 700px; } }

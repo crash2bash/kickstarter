@@ -12,4 +12,8 @@
 
 @media (min-width: 768px) {
   .navigation {
-    display: flex; } }
+    display: block; }
+  .navigation-list {
+    width: 500px;
+    display: flex;
+    justify-content: space-between; } }

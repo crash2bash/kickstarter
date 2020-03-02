@@ -33,3 +33,7 @@
     opacity: 75%; }
   100% {
     opacity: 100%; } }
+
+@media (min-width: 768px) {
+  .scroll {
+    display: block; } }

@@ -34,6 +34,10 @@
   100% {
     opacity: 100%; } }
 
+@media (min-width: 768px) {
+  .scroll {
+    display: block; } }
+
 .technology {
   margin-bottom: 90px; }
 
@@ -85,3 +89,26 @@
   font-family: "Helvetica Light";
   line-height: 17px;
   color: #7c7c7c; }
+
+@media (min-width: 768px) {
+  .technology {
+    margin-bottom: 130px; }
+    .technology__container {
+      width: 768px; }
+    .technology__title {
+      font-size: 56px;
+      line-height: 70px; }
+    .technology__scrolling {
+      margin-bottom: 162px; }
+    .technology__review {
+      width: 700px;
+      font-size: 24px;
+      line-height: 36px; }
+      .technology__review::after {
+        width: 233px;
+        height: 191px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .technology__review-author {
+      margin-bottom: 5px; } }

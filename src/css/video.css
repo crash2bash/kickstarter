@@ -1,3 +1,9 @@
 .video__youtube {
   width: 320px;
   margin-bottom: 89px; }
+
+@media (min-width: 768px) {
+  .video__youtube {
+    width: 768px;
+    height: 400px;
+    margin-bottom: 130px; } }

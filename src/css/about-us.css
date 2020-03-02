@@ -38,3 +38,45 @@
     transition: width 0.5s ease-in-out; }
   .about-us__link:hover::after, .about-us__link:active::after, .about-us__link:focus::after {
     width: 56%; }
+
+@media (min-width: 768px) {
+  .about-us {
+    margin-bottom: 198px; }
+    .about-us__container {
+      width: 768px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 162px 140px 25px;
+      gap: 30px 20px;
+      grid-template-areas: "img title" "img text" "img link"; }
+    .about-us__img {
+      margin: 0;
+      width: 374px;
+      height: 415px;
+      grid-area: img; }
+    .about-us__title {
+      width: 430px;
+      grid-area: title;
+      margin: 0 0 0 -90px;
+      align-self: center;
+      font-size: 56px;
+      line-height: 77px;
+      z-index: 1; }
+    .about-us__text {
+      margin: 0;
+      grid-area: text;
+      font-size: 16px;
+      line-height: 24px; }
+    .about-us__link {
+      width: 127px;
+      align-self: center;
+      margin: 0;
+      grid-area: link;
+      font-family: "Helvetica Medium";
+      font-size: 12px;
+      line-height: 15px; }
+      .about-us__link::after {
+        width: 54px;
+        top: 120%; }
+      .about-us__link:hover::after, .about-us__link:active::after, .about-us__link:focus::after {
+        width: 100%; } }

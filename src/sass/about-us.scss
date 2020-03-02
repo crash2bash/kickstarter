@@ -59,3 +59,69 @@
     }
   }
 }
+
+@media (min-width: $tablet) {
+  .about-us {
+    margin-bottom: 198px;
+
+    &__container {
+      width: $tablet;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 162px 140px 25px;
+      gap: 30px 20px;
+      grid-template-areas: "img title"
+                           "img text"
+                           "img link";
+    }
+
+    &__img {
+      margin: 0;
+      width: 374px;
+      height: 415px;
+      grid-area: img;
+    }
+
+    &__title {
+      width: 430px;
+      grid-area: title;
+      margin: 0 0 0 -90px;
+      align-self: center;
+
+      font-size: $fs-b + 19;
+      line-height: $lh-b + 22;
+      z-index: 1;
+    }
+
+    &__text {
+      margin: 0;
+      grid-area: text;
+
+      font-size: $fs + 2;
+      line-height: $lh + 3;
+    }
+
+    &__link {
+      width: 127px;
+      align-self: center;
+      margin: 0;
+      grid-area: link;
+      font-family: $ff-hmedium;
+      font-size: $fs - 2;
+      line-height: $lh - 6;
+
+      &::after {
+        width: 54px;
+        top: 120%;
+      }
+
+      &:hover, 
+      &:active, 
+      &:focus {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

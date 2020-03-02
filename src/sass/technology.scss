@@ -65,3 +65,41 @@
   line-height: $lh - 4;
   color: #7c7c7c;
 }
+
+@media (min-width: $tablet) {
+  .technology {
+    margin-bottom: 130px;
+
+    &__container {
+      width: $tablet;
+    }
+
+    &__title {
+      font-size: $fs-b + 19;
+      line-height: $lh-b + 15;
+    }
+
+    &__scrolling {
+      margin-bottom: 162px;
+    }
+
+    &__review {
+      width: 700px;
+
+      font-size: $fs + 10;
+      line-height: $lh + 15;
+
+      &::after {
+        width: 233px;
+        height: 191px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__review-author {
+      margin-bottom: 5px;
+    }
+  }
+}

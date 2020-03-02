@@ -2,9 +2,8 @@
 
 .content__image {
   margin-bottom: 40px;
-
-  object-fit: cover;
-  object-position: left;
+  width: 320px;
+  height: 245px;
 }
 
 .content__title {
@@ -28,4 +27,38 @@
 
   text-align: center;
   color: $text-color;
+}
+
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: 34px 250px 483px;
+    grid-template-rows: 183px 34px 120px;
+    grid-template-areas: ". title image" 
+                         ". . image"
+                         ". text image";
+    margin-bottom: 217px;
+  }
+
+  .content__image {
+    grid-area: image;
+    width: 483px;
+    height: 365px;
+    margin-top: -32px;
+  }
+
+  .content__title {
+    margin: 0;
+    grid-area: title;
+    font-size: $fs-b + 11;
+    line-height: $lh-b + 7;
+    text-align: left;
+  }
+
+  .content__text {
+    width: 250px;
+    grid-area: text;
+    margin: 0 0 0 5px;
+    text-align: left;
+  }
 }
