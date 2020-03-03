@@ -1,80 +1,89 @@
 @import './src/sass/variables.scss';
+@import './container.scss';
 
 .question {
   margin-bottom: 100px;
-}
 
-.question__container {
-  width: $mc-width;
-  margin: 0 auto;
-}
-
-.question__title {
-  margin-bottom: 30px;
-  font-family: $ff-dbold;
-  font-size: $fs-b;
-  line-height: $lh-b - 9;
-}
-
-.question__form-input {
-  width: 260px;
-  box-sizing: border-box;
-  border: 1px solid #828282;
-
-  background-color: #f7f7f7;
-}
-
-.question__form-input::placeholder {
-  color: #b2b2b2;
-}
-
-.question__email {
-  height: 48px;
-  margin-bottom: 19px;
-  padding: 0 30px;
-
-  font-size: $fs + 2;
-  line-height: $lh - 2;
-  outline: none;
-
-  &:valid {
-    border: 1px solid #0C797A;
+  &__title {
+    margin-bottom: 30px;
+    font-family: $ff-dbold;
+    font-size: $fs-b;
+    line-height: $lh-b - 9;
   }
 
-  &:invalid:focus {
-    border: 1px solid #EB5757;
+  &__form-input {
+    width: 260px;
+    box-sizing: border-box;
+    border: 1px solid #828282;
+
+    background-color: #f7f7f7;
+  }
+
+  &__form-input::placeholder {
+    color: #b2b2b2;
+  }
+
+  &__form-input--email {
+    height: 48px;
+    margin-bottom: 19px;
+    padding: 0 30px;
+
+    font-size: $fs + 2;
+    line-height: $lh - 2;
+    outline: none;
+
+    &:valid {
+      border: 1px solid #0C797A;
+    }
+
+    &:invalid:focus {
+      border: 1px solid #EB5757;
+    }
+  }
+
+  &__message {
+    height: 128px;
+    resize: none;
+    margin-bottom: 30px;
+    padding: 16px 30px;
+
+    font-family: $ff-h;
+    font-size: $fs + 2;
+    line-height: $lh - 2;
   }
 }
 
-.question__message {
-  height: 128px;
-  resize: none;
-  margin-bottom: 30px;
-  padding: 16px 30px;
+@media (min-width: $tablet) {
+  .question {
+    margin-bottom: 130px;
 
-  font-family: $ff-h;
-  font-size: $fs + 2;
-  line-height: $lh - 2;
-}
+    &__container {
+      display: grid;
+      grid-template-columns: 340px 340px;
+      grid-template-rows: 48px 201px;
+      gap: 19px 20px;
+    }
 
-.button {
-  width: 102px;
-  height: 40px;
-  box-sizing: border-box;
+    &__title {
+      margin: 0;
+      grid-column-start: 1;
+      grid-row-start: 1;
 
-  font-family: $ff-hmedium;
-  font-size: $fs - 2;
-  line-height: $lh - 6;
+      font-size: $fs-b + 19;
+      line-height: $lh-b + 15;
+    }
 
-  border: 1px solid #0DB2B3;
-  background-color: #0DB2B3;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
+    &__form-input {
+      width: 340px;
+      height: 201px;
+      grid-column-start: 2;
+      grid-row-start: 2;
 
-  &:hover,
-  &:focus {
-    background-color: #fff;
-    color: #0DB2B3;
+      &--email {
+        width: 340px;
+        height: 48px;
+        grid-column-start: 2;
+      }
+    }
   }
 }

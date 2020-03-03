@@ -1,0 +1,15 @@
+.button {
+  width: 102px;
+  height: 40px;
+  box-sizing: border-box;
+  font-family: "Helvetica Medium";
+  font-size: 12px;
+  line-height: 15px;
+  border: 1px solid #0DB2B3;
+  background-color: #0DB2B3;
+  color: #fff;
+  cursor: pointer;
+  outline: none; }
+  .button:hover, .button:focus {
+    background-color: #fff;
+    color: #0DB2B3; }

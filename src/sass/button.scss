@@ -1,0 +1,23 @@
+@import './src/sass/variables.scss';
+
+.button {
+  width: 102px;
+  height: 40px;
+  box-sizing: border-box;
+
+  font-family: $ff-hmedium;
+  font-size: $fs - 2;
+  line-height: $lh - 6;
+
+  border: 1px solid #0DB2B3;
+  background-color: #0DB2B3;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: #0DB2B3;
+  }
+}

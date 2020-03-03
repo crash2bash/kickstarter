@@ -48,4 +48,6 @@
 
 @media (min-width: 768px) {
   .post-scrolling__advantages {
+    display: none; }
+  .post-scrolling__feautures {
     display: none; } }
