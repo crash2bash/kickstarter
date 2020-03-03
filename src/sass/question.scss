@@ -78,9 +78,41 @@
       height: 201px;
 
       &--email {
-        width: 340px;
         height: 48px;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .question {
+
+    &--outer {
+      margin-bottom: 142px;
+    }
+
+    &__container {
+      width: $dc-width;
+      grid-template-columns: 480px 438px;
+      gap: 0 102px;
+      
+      &--outer {
+        margin-left: 225px;
+      }
+    }
+
+    &__form-input {
+      width: 438px;
+      height: 128px;
+      
+      &--email {
+        height: 48px;
+      }
+    }
+
+    &__title {
+      width: 480px;
+      line-height: $lh-b + 17;
     }
   }
 }

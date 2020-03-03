@@ -48,9 +48,10 @@
 @media (min-width: 768px) {
   .feautures {
     position: relative;
-    margin-bottom: 145px;
     padding: 0;
     background-color: #f7f7f7; }
+    .feautures--outer {
+      margin-bottom: 145px; }
     .feautures::after {
       content: "";
       position: absolute;

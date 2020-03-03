@@ -25,7 +25,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .footer {
     margin-bottom: 50px;
 
@@ -42,6 +42,10 @@
       width: 140px;
       justify-content: space-between;
       margin: 0 auto;
+
+      &--outer {
+        margin-bottom: 36px;
+      }
     }
 
     &__rights {

@@ -29,5 +29,7 @@
       width: 140px;
       justify-content: space-between;
       margin: 0 auto; }
+      .footer__socials--outer {
+        margin-bottom: 36px; }
     .footer__rights {
       font-size: 14px; } }

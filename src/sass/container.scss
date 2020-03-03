@@ -10,3 +10,9 @@
     width: $tablet;
   }
 }
+
+@media (min-width: $desktop) {
+  .container {
+    width: $desktop;
+  }
+}

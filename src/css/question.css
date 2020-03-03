@@ -6,6 +6,10 @@
   .container {
     width: 768px; } }
 
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px; } }
+
 .question {
   margin-bottom: 100px; }
   .question__title {
@@ -56,5 +60,22 @@
     width: 340px;
     height: 201px; }
     .question__form-input--email {
-      width: 340px;
       height: 48px; } }
+
+@media (min-width: 1440px) {
+  .question--outer {
+    margin-bottom: 142px; }
+  .question__container {
+    width: 1194px;
+    grid-template-columns: 480px 438px;
+    gap: 0 102px; }
+    .question__container--outer {
+      margin-left: 225px; }
+  .question__form-input {
+    width: 438px;
+    height: 128px; }
+    .question__form-input--email {
+      height: 48px; }
+  .question__title {
+    width: 480px;
+    line-height: 72px; } }

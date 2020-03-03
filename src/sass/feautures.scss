@@ -61,9 +61,12 @@
 @media (min-width: $tablet) {
   .feautures {
     position: relative;
-    margin-bottom: 145px;
     padding: 0;
     background-color: #f7f7f7;
+
+  &--outer {
+    margin-bottom: 145px;
+  }
 
   &::after {
     content: "";
@@ -142,6 +145,11 @@
 
 @media (min-width: $desktop) {
   .feautures {
+
+    &--outer {
+      
+    }
+
     &::after {
       width: 1113px;
       height: 701px;
