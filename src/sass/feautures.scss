@@ -139,3 +139,33 @@
   }
   }
 }
+
+@media (min-width: $desktop) {
+  .feautures {
+    &::after {
+      width: 1113px;
+      height: 701px;
+    }
+
+    &__container {
+      width: $dc-width;
+    }
+
+    &__title {
+      line-height: $lh-b - 14;
+    }
+
+    &__inner-list-item {
+      line-height: $lh + 3;
+    }
+
+    &__image {
+      width: 786px;
+      height: 509px;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  }
+}

@@ -104,3 +104,18 @@
       height: 379px;
       justify-self: end;
       z-index: 1; } }
+
+@media (min-width: 1440px) {
+  .feautures::after {
+    width: 1113px;
+    height: 701px; }
+  .feautures__container {
+    width: 1194px; }
+  .feautures__title {
+    line-height: 41px; }
+  .feautures__inner-list-item {
+    line-height: 24px; }
+  .feautures__image {
+    width: 786px;
+    height: 509px;
+    z-index: 1; } }

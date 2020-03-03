@@ -288,6 +288,10 @@
   .post-scrolling__feautures {
     display: none; } }
 
+@media (min-width: 1440px) {
+  .technology__scrolling {
+    display: none; } }
+
 .about-us {
   margin-bottom: 97px; }
   .about-us__container {
@@ -425,78 +429,81 @@
 
 .technology {
   margin-bottom: 90px; }
-
-.technology__container {
-  width: 260px;
-  margin: 0 auto; }
-
-.technology__title {
-  width: 260px;
-  margin: 0 auto;
-  font-family: "Din Bold";
-  font-size: 37px;
-  line-height: 46px;
-  text-transform: uppercase; }
-
-.technology__scrolling {
-  margin-top: -35px;
-  margin-bottom: 90px; }
-
-.technology__review {
-  position: relative;
-  margin: 0 auto 40px auto;
-  font-family: "Din Bold";
-  text-align: center; }
-  .technology__review::after {
-    content: "";
-    position: absolute;
-    background-image: url(../img/citate.svg);
-    background-repeat: no-repeat;
-    width: 208px;
-    height: 171px;
-    top: -15%;
-    left: 10%; }
-
-.technology__review-photo {
-  display: block;
-  margin: 0 auto 20px auto; }
-
-.technology__review-author {
-  margin: 0 0 7px 0;
-  font-family: "Helvetica Medium";
-  font-size: 16px;
-  line-height: 27px;
-  text-align: center; }
-
-.technology__review-position {
-  margin: 0;
-  text-align: center;
-  font-family: "Helvetica Light";
-  line-height: 17px;
-  color: #7c7c7c; }
+  .technology__container {
+    width: 260px;
+    margin: 0 auto; }
+  .technology__title {
+    width: 260px;
+    margin: 0 auto;
+    font-family: "Din Bold";
+    font-size: 37px;
+    line-height: 46px;
+    text-transform: uppercase; }
+  .technology__scrolling {
+    margin-top: -35px;
+    margin-bottom: 90px; }
+  .technology__review {
+    position: relative;
+    margin: 0 auto 40px auto;
+    font-family: "Din Bold";
+    text-align: center; }
+    .technology__review::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/citate.svg);
+      background-repeat: no-repeat;
+      width: 208px;
+      height: 171px;
+      top: -15%;
+      left: 10%; }
+  .technology__review-photo {
+    display: block;
+    margin: 0 auto 20px auto; }
+  .technology__review-author {
+    margin: 0 0 7px 0;
+    font-family: "Helvetica Medium";
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center; }
+  .technology__review-position {
+    margin: 0;
+    text-align: center;
+    font-family: "Helvetica Light";
+    line-height: 17px;
+    color: #7c7c7c; }
 
 @media (min-width: 768px) {
-  .technology {
+  .technology--outer {
     margin-bottom: 130px; }
-    .technology__container {
-      width: 768px; }
-    .technology__title {
-      font-size: 56px;
-      line-height: 70px; }
-    .technology__scrolling {
-      margin-bottom: 162px; }
-    .technology__review {
-      width: 700px;
-      font-size: 24px;
-      line-height: 36px; }
-      .technology__review::after {
-        width: 233px;
-        height: 191px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-    .technology__review-author {
-      margin-bottom: 5px; } }
+  .technology__container {
+    width: 768px; }
+  .technology__title {
+    font-size: 56px;
+    line-height: 70px; }
+  .technology__scrolling {
+    margin-bottom: 162px; }
+  .technology__review {
+    width: 700px;
+    font-size: 24px;
+    line-height: 36px; }
+    .technology__review::after {
+      width: 233px;
+      height: 191px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .technology__review-author {
+    margin-bottom: 5px; } }
+
+@media (min-width: 1440px) {
+  .technology--outer {
+    margin-bottom: 150px; }
+  .technology__container {
+    width: 1194px; }
+  .technology__title {
+    width: 380px;
+    margin: 0;
+    margin-left: 123px; } }
 
 .feautures {
   margin-bottom: 45px;
@@ -604,6 +611,21 @@
       height: 379px;
       justify-self: end;
       z-index: 1; } }
+
+@media (min-width: 1440px) {
+  .feautures::after {
+    width: 1113px;
+    height: 701px; }
+  .feautures__container {
+    width: 1194px; }
+  .feautures__title {
+    line-height: 41px; }
+  .feautures__inner-list-item {
+    line-height: 24px; }
+  .feautures__image {
+    width: 786px;
+    height: 509px;
+    z-index: 1; } }
 
 .container {
   width: 260px;

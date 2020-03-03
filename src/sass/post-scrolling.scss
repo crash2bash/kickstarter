@@ -63,12 +63,18 @@
   margin-bottom: 80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .post-scrolling__advantages {
     display: none;
   }
 
   .post-scrolling__feautures {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .technology__scrolling {
     display: none;
   }
 }
