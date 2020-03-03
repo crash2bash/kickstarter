@@ -38,6 +38,10 @@
   .scroll {
     display: block; } }
 
+@media (min-width: 768px) {
+  .scroll {
+    display: grid; } }
+
 .technology {
   margin-bottom: 90px; }
 

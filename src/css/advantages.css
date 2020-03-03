@@ -48,10 +48,21 @@
     .advantages__list {
       display: grid;
       grid-template-columns: 340px 340px;
-      grid-gap: 155px 20px; }
+      gap: 155px 20px; }
     .advantages__list-item {
       margin: 0; }
     .advantages__title {
       margin: 0 0 20px 0; }
     .advantages__text {
       margin: 0; } }
+
+@media (min-width: 1440px) {
+  .advantages__container {
+    width: 1194px; }
+  .advantages__list {
+    grid-template-columns: repeat(4, 276px);
+    gap: 0 30px; }
+    .advantages__list-item {
+      display: grid;
+      grid-template-rows: 30px 126px;
+      gap: 50px 0; } }

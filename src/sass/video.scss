@@ -1,14 +1,37 @@
 @import './src/sass/variables.scss';
 
-.video__youtube {
-  width: 320px;
-  margin-bottom: 89px;
+.video {
+  &__youtube {
+    width: $mobile;
+  }
+
+  &--outer {
+    margin-bottom: 89px;
+  }
 }
 
-@media (min-width: 768px) {
-  .video__youtube {
-    width: 768px;
-    height: 400px;
+@media (min-width: $tablet) {
+  .video {
+    &__youtube {
+      width: $tablet;
+      height: 400px;
+    }
+
+  &--outer {
     margin-bottom: 130px;
+  }
+}
+}
+
+@media (min-width: $desktop) {
+  .video {
+    &__youtube {
+      width: $desktop;
+      height: 590px;
+    }
+
+    &--outer {
+      margin-bottom: 150px;
+    }
   }
 }
