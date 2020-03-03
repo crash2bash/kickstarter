@@ -1,64 +1,103 @@
 @import './src/sass/variables.scss';
 
-.content__image {
-  margin-bottom: 40px;
-  width: 320px;
-  height: 245px;
-}
+.content {
 
-.content__title {
-  margin: 0 0 23px 0;
+  &__image {
+    margin-bottom: 40px;
+    width: 320px;
+    height: 245px;
+  }
 
-  font-family: $ff-db;
-  font-size: 44px;
-  line-height: 57px;
+  &__title {
+    margin: 0 0 23px 0;
 
-  text-transform: uppercase;
-  text-align: center;
-  color: $text-color;
-}
+    font-family: $ff-db;
+    font-size: 44px;
+    line-height: 57px;
 
-.content__text {
-  width: $mc-width;
-  margin: 0 auto 187px auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-color;
+  }
 
-  font-size: $fs + 2;
-  line-height: $lh + 3;
+  &__text {
+    width: $mc-width;
+    margin: 0 auto 187px auto;
 
-  text-align: center;
-  color: $text-color;
+    font-size: $fs + 2;
+    line-height: $lh + 3;
+
+    text-align: center;
+    color: $text-color;
+  }
 }
 
 @media (min-width: 768px) {
   .content {
+    width: $tc-width;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 34px 250px 483px;
-    grid-template-rows: 183px 34px 120px;
-    grid-template-areas: ". title image" 
-                         ". . image"
-                         ". text image";
-    margin-bottom: 217px;
-  }
+    grid-template-columns: 303px 483px;
+    grid-template-rows: 186px 120px;
+    gap: 34px 0;
+    
+    &--outer {
+      margin-bottom: 217px;
+    }
 
-  .content__image {
-    grid-area: image;
-    width: 483px;
-    height: 365px;
-    margin-top: -32px;
-  }
+    &__image {
+      width: 483px;
+      height: 365px;
+      grid-column-start: 2;
+      margin-top: -30px;
+      margin-left: -50px;
+    }
 
-  .content__title {
-    margin: 0;
-    grid-area: title;
-    font-size: $fs-b + 11;
-    line-height: $lh-b + 7;
-    text-align: left;
-  }
+    &__title {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      margin: 0;
+      font-size: $fs-b + 11;
+      line-height: $lh-b + 7;
+      text-align: left;
+    }
 
-  .content__text {
-    width: 250px;
-    grid-area: text;
-    margin: 0 0 0 5px;
-    text-align: left;
+    &__text {
+      grid-row-start: 2;
+      width: 250px;
+      margin: 0 0 0 5px;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .content {
+    width: $dc-width;
+    grid-template-columns: 378px 939px;
+    grid-template-rows: 249px 96px;
+
+    &--outer {
+      margin-bottom: 175px;
+    }
+
+    &__image {
+      margin: 0;
+      margin-bottom: -10px;
+      align-self: end;
+      grid-row-end: 3;
+      width: 939px;
+      height: 464px;
+      z-index: -1;
+    }
+
+    &__title {
+      font-size: $fs-desktop;
+      line-height: $lh-desktop;
+    }
+
+    &__text {
+      width: 276px;
+    }
   }
 }

@@ -56,8 +56,14 @@ body {
   background-color: #f7f7f7;
 }
 
-@media(min-width: 768px) {
+@media(min-width: $tablet) {
   body {
-    width: 768px;
+    width: $tablet;
+  }
+}
+
+@media(min-width: $desktop) {
+  body {
+    width: $desktop;
   }
 }

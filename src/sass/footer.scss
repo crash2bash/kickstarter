@@ -1,27 +1,51 @@
 @import './src/sass/variables.scss';
 
-.footer__container {
-  @include mc-width;
+.footer {
+
+  &__logo-link {
+    display: none;
+  }
+
+  &__socials {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    @include reset;
+    margin-bottom: 23px;
+    list-style: none;
+  }
+
+  &__rights {
+    font-family: $ff-hlight;
+    text-align: center;
+    font-size: $fs - 2;
+
+    color: #bdbdbd;
+  }
 }
 
-.footer__logo-link {
-  display: none;
-}
+@media (min-width: 768px) {
+  .footer {
+    margin-bottom: 50px;
 
-.footer__socials {
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  align-items: center;
-  @include reset;
-  margin-bottom: 23px;
-  list-style: none;
-}
+    &__logo-link {
+      display: block;
+      text-align: center;
 
-.footer__rights {
-  font-family: $ff-hlight;
-  text-align: center;
-  font-size: $fs - 2;
+      &-outer {
+        margin-bottom: 65px;
+      }
+    }
 
-  color: #bdbdbd;
+    &__socials {
+      width: 140px;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    &__rights {
+      font-size: $fs;
+    }
+  }
 }

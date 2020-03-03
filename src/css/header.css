@@ -1,4 +1,4 @@
-.header-container {
+.header__container {
   width: 260px;
   display: flex;
   justify-content: space-between;
@@ -22,5 +22,9 @@
 @media (min-width: 768px) {
   .header__sandwich {
     display: none; }
-  .header-container {
+  .header__container {
     width: 700px; } }
+
+@media (min-width: 1440px) {
+  .header__container {
+    width: 1194px; } }

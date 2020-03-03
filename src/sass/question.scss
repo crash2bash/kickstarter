@@ -55,19 +55,19 @@
 
 @media (min-width: $tablet) {
   .question {
-    margin-bottom: 130px;
+    &--outer {
+      margin-bottom: 130px;
+    }
 
     &__container {
       display: grid;
-      grid-template-columns: 340px 340px;
-      grid-template-rows: 48px 201px;
-      gap: 19px 20px;
+      grid-template-columns: repeat(2, 384px);
     }
 
     &__title {
       margin: 0;
-      grid-column-start: 1;
-      grid-row-start: 1;
+      width: 340px;
+      justify-self: center;
 
       font-size: $fs-b + 19;
       line-height: $lh-b + 15;
@@ -76,13 +76,10 @@
     &__form-input {
       width: 340px;
       height: 201px;
-      grid-column-start: 2;
-      grid-row-start: 2;
 
       &--email {
         width: 340px;
         height: 48px;
-        grid-column-start: 2;
       }
     }
   }

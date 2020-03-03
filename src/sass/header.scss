@@ -1,37 +1,51 @@
 @import './src/sass/variables.scss';
 
-.header-container {
-  width: $mc-width;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 22px;
-}
+.header {
 
-.header__logo {
-  padding: 28px 0 22px 0;
-}
+  &__container {
+    width: $mc-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
 
-.header__sandwich {
-  display: block;
-  box-sizing: border-box;
-  width: 24px;
-  height: 14px;
-  padding: 5px 5px;
+  &__logo {
+    padding: 28px 0 22px 0;
+  }
 
-  background-image: url(/img/sandwhich.svg);
-  background-repeat: no-repeat;
+  &__sandwich {
+    display: block;
+    box-sizing: border-box;
+    width: 24px;
+    height: 14px;
+    padding: 5px 5px;
 
-  cursor: pointer;
+    background-image: url(/img/sandwhich.svg);
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {
-  .header__sandwich {
+  .header {
+
+  &__sandwich {
     display: none;
   }
 
-  .header-container {
+  &__container {
     width: 700px;
+  }
+}
+}
+
+@media (min-width: $desktop) {
+  .header {
+    &__container {
+      width: $dc-width;
+    }
   }
 }

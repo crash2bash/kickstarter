@@ -2,94 +2,93 @@
 
 .advantages {
   margin-bottom: 89px;
-}
 
-.advantages__container {
-  @include mc-width;
-}
+  &__container {
+    @include mc-width;
+  }
 
-.advantages__list {
-  @include reset;
-  margin-bottom: 35px;
+  &__list {
+    @include reset;
+    margin-bottom: 35px;
 
-  list-style: none;
-}
+    list-style: none;
+  }
 
-.advantages__list-item {
-  position: relative;
-  margin-bottom: 50px;
+  &__list-item {
+    position: relative;
+    margin-bottom: 50px;
 
-  &::before {
-    position: absolute;
-    content: "";
+    &::before {
+      position: absolute;
+      content: "";
 
-    background-image: url(../img/futuristic_design.svg);
-    width: 58px;
-    height: 46px;
+      background-image: url(../img/futuristic_design.svg);
+      width: 58px;
+      height: 46px;
 
-    margin-top: -90px;
-    left: 42%;
+      margin-top: -90px;
+      left: 42%;
+    }
+
+    &--speaker::before {
+      background-image: url(../img/speaker.svg);
+    }
+
+    &--multiroom::before {
+      background-image: url(../img/multiroom.svg);
+    }
+
+    &--lighting::before {
+      background-image: url(../img/lighting.svg);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 50px;
+
+    font-family: $ff-d;
+    font-size: $fs + 10;
+    line-height: $lh + 9;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+
+  &__text {
+    text-align: center;
+    color: #7c7c7c;
   }
 }
-
-.advantages__list-item--speaker::before {
-  background-image: url(../img/speaker.svg);
-}
-
-.advantages__list-item--multiroom::before {
-  background-image: url(../img/multiroom.svg);
-}
-
-.advantages__list-item--lighting::before {
-  background-image: url(../img/lighting.svg);
-}
-
-.advantages__list-item:last-child {
-  margin-bottom: 0;
-}
-
-.advantages__title {
-  position: relative;
-  margin-bottom: 50px;
-
-  font-family: $ff-d;
-  font-size: $fs + 10;
-  line-height: $lh + 9;
-
-  text-align: center;
-  text-transform: uppercase;
-  color: $text-color;
-}
-
-.advantages__text {
-  text-align: center;
-  color: #7c7c7c;
-}
-
 @media (min-width: 768px) {
   .advantages {
     margin-bottom: 130px;
-  }
 
-  .advantages__container {
+  &__container {
     width: 700px;
   }
 
-  .advantages__list {
+  &__list {
     display: grid;
     grid-template-columns: 340px 340px;
     grid-gap: 155px 20px;
   }
 
-  .advantages__list-item {
+  &__list-item {
     margin: 0;
   }
 
-  .advantages__title {
+  &__title {
     margin: 0 0 20px 0;
   }
 
-  .advantages__text {
+  &__text {
     margin: 0;
   }
+}
 }
