@@ -26,11 +26,11 @@ advantagesSlider.addEventListener('touchend', function(event) {
 }, false); 
 
 function handleSlider() {
-  if ((touchendX < touchstartX) && (touchstartX > 960)) {
+  if (touchendX < touchstartX) {
     slideRight();
   }
   
-  else if ((touchendX > touchstartX) && (touchendX > 960)) {
+  else if (touchendX > touchstartX) {
     slideLeft();
   }
 }
