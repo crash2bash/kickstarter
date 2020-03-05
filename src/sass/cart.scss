@@ -2,7 +2,7 @@
 
 .cart {
   display: none;
-  width: $mobile;
+  width: $mc-width;
   margin: 0 auto;
   padding: 0 30px;
 
@@ -11,14 +11,11 @@
   }
 
   @media (min-width: $tablet) {
-    width: $tablet;
+    width: $tc-width;
     padding: 0 34px;
-    display: grid;
-    grid-template-columns: 435px 333px;
-    // grid-template-rows: repeat(10, 1fr);
   }
 
-  &__logo {
+  &__logo-container {
     display: none;
 
     @media (min-width: $tablet) {
@@ -26,12 +23,15 @@
     }
   }
 
+  &__logo {
+    padding-bottom: 0;
+  }
+
   &__close {
     position: relative;
     display: block;
     cursor: pointer;
     padding: 20px;
-    grid-row-start: 2;
 
     &::after {
       content: "";
@@ -48,7 +48,6 @@
         left: 0;
         top: 30%;
         transform: translate(0, -30%);
-        grid-row-start: 2;
       }
     }
   }
@@ -58,7 +57,39 @@
 
     @media (min-width: $tablet) {
       display: block;
-      grid-row-start: 3;
+      margin-bottom: 90px;
+    }
+  }
+
+  &__container {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 331px 174px;
+      gap: 0 65px;
+      justify-content: center;
+  
+      &--outer {
+        margin-bottom: 131px;
+      }
+    }
+  }
+
+  &__product {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__order {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-rows: 25px 160px 17px 15px 44px 25px 48px;
+      grid-column-start: 2;
+      grid-row-start: 1;
+      align-self: end;
+      margin-bottom: 91px;
     }
   }
 
@@ -70,10 +101,10 @@
     text-align: center;
 
     @media (min-width: $tablet) {
-      grid-row-start: 5;
-      font-style: 48px;
+      font-size: 48px;
       line-height: 60px;
-
+      margin: 0;
+      margin-bottom: 20px;
     }
   }
 
@@ -84,12 +115,10 @@
     text-align: center;
 
     @media (min-width: $tablet) {
-      margin: 0;
-      grid-row-start: 6;
-      line-height: 36px;
-      align-self: center;
-
       font-family: $ff-dbold;
+      line-height: 36px;
+      margin: 0;
+      margin-bottom: 54px;
     }
   }
 
@@ -100,9 +129,11 @@
     margin: 0 auto;
 
     @media (min-width: $tablet) {
-      grid-row-start: 4;
       width: 473px;
       height: 419px;
+      margin-bottom: 60px;
+      order: -1;
+      margin-left: 85px;
     }
   }
 
@@ -111,7 +142,13 @@
     margin: 0 auto;
 
     @media (min-width: $tablet) {
-      grid-row-start: 7;
+      width: 272px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      height: 66px;
     }
   }
 
@@ -126,19 +163,23 @@
     &--outer {
       margin-bottom: 40px;
     }
+
+    @media (min-width: $tablet) {
+      margin: 0;
+      width: 200px;
+    }
   }
 
   &__amount {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &--outer {
-      margin-bottom: 40px;
-    }
-
     @media (min-width: $tablet) {
-      grid-row-start: 8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      &--outer {
+        margin-bottom: 40px;
+      }
+      margin-bottom: 50px;
     }
   }
 
@@ -178,15 +219,15 @@
     }
   }
 
-  &__separator {
-    display: block;
-    width: 260px;
-    height: 1px;
-    margin: 0 auto;
-    margin-bottom: 42px;
+  // &__separator {
+  //   display: block;
+  //   width: 260px;
+  //   height: 1px;
+  //   margin: 0 auto;
+  //   margin-bottom: 42px;
 
-    background-color: #E0E0E0;
-  }
+  //   background-color: #E0E0E0;
+  // }
 
   &__shipping-info {
     position: relative;
@@ -194,6 +235,7 @@
     color: #4F4F4F;
     margin-left: 100px;
     margin-bottom: 93px;
+    justify-self: end;
 
     &::before {
       content: "";
@@ -207,7 +249,11 @@
     }
 
     @media (min-width: $tablet) {
-      grid-row-start: 10;
+      font-family: $ff-hmedium;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
@@ -223,9 +269,9 @@
     text-align: center;
 
     @media (min-width: $tablet) {
+      text-align: left;
+      grid-row-start: 1;
       margin: 0;
-      grid-row-start: 6;
-      align-self: top;
     }
   }
 
@@ -240,10 +286,9 @@
     color: #4f4f4f;
 
     @media (min-width: $tablet) {
+      text-align: left;
+      grid-row-start: 3;
       margin: 0;
-      grid-column-start: 2;
-      grid-row-start: 8;
-      align-self: start;
     }
   }
 
@@ -257,10 +302,10 @@
     text-align: center;
 
     @media (min-width: $tablet) {
+      text-align: left;
+      grid-row-start: 5;
       margin: 0;
-      grid-column-start: 2;
-      grid-row-start: 8;
-      align-self: end;
+      align-self: center;
     }
   }
 }

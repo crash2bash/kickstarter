@@ -13,6 +13,7 @@
 
   text-transform: uppercase;
   outline: none;
+  transition: 0.3s ease-in-out;
 
   &--question {
     width: 102px;
@@ -52,6 +53,7 @@
       background-color: #131313;
       border: none;
       color: #fff;
+      border: 1px solid #131313;
     }
 
     &--outer {
@@ -60,7 +62,7 @@
 
     @media (min-width: $tablet) {
       position: relative;
-      grid-row-start: 9;
+      margin-bottom: 71px;
 
       &::after {
         content: "";
@@ -69,8 +71,8 @@
         height: 1px;
 
         top: 100%;
-        left: 50%;
-        transform: translate(-50%, -100%);
+        left: 40%;
+        transform: translate(-40%, -100%);
         margin-top: 30px;
 
         background-color: #e0e0e0;
@@ -83,8 +85,10 @@
     height: 49px;
     margin: 0 auto;
 
+    text-transform: uppercase;
     background-color: #333333;
     color: #fff;
+    transition: 0.3s ease-in-out;
 
     &--outer {
       margin-bottom: 90px;
@@ -101,9 +105,10 @@
 
     @media (min-width: $tablet) {
       position: relative;
-      grid-row-start: 9;
       width: 174px;
       height: 48px;
+      margin: 0;
+      grid-row-start: 7;
 
       &::after {
         content: "";

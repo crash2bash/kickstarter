@@ -35,3 +35,9 @@ $text-color: #333333;
   width: $mc-width;
   margin: 0 auto;
 }
+
+@mixin centeredItemsInGridTablet {
+  margin: 0;
+  margin-right: 19px;
+  justify-self: end;
+}

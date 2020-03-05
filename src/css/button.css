@@ -8,7 +8,8 @@
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  outline: none; }
+  outline: none;
+  transition: 0.3s ease-in-out; }
   .button--question {
     width: 102px;
     height: 40px;
@@ -32,29 +33,32 @@
     .button--cart:hover, .button--cart:focus {
       background-color: #131313;
       border: none;
-      color: #fff; }
+      color: #fff;
+      border: 1px solid #131313; }
     .button--cart--outer {
       margin-bottom: 40px; }
     @media (min-width: 768px) {
       .button--cart {
         position: relative;
-        grid-row-start: 9; }
+        margin-bottom: 71px; }
         .button--cart::after {
           content: "";
           position: absolute;
           width: 331px;
           height: 1px;
           top: 100%;
-          left: 50%;
-          transform: translate(-50%, -100%);
+          left: 40%;
+          transform: translate(-40%, -100%);
           margin-top: 30px;
           background-color: #e0e0e0; } }
   .button--order {
     width: 120px;
     height: 49px;
     margin: 0 auto;
+    text-transform: uppercase;
     background-color: #333333;
-    color: #fff; }
+    color: #fff;
+    transition: 0.3s ease-in-out; }
     .button--order--outer {
       margin-bottom: 90px; }
     .button--order:hover, .button--order:focus {
@@ -64,9 +68,10 @@
     @media (min-width: 768px) {
       .button--order {
         position: relative;
-        grid-row-start: 9;
         width: 174px;
-        height: 48px; }
+        height: 48px;
+        margin: 0;
+        grid-row-start: 7; }
         .button--order::after {
           content: "";
           position: absolute;

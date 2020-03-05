@@ -217,42 +217,48 @@
   <script src="js/slider.js"></script>
 
   <section class="cart cart--buy">
-    <a href="#" class="cart__logo logo-link">
+    <a href="#" class="cart__logo-container logo-link">
       <img src="img/logo.svg" 
-           class="logo header__logo" 
-           alt="Crazybaby_logo" 
-           width="161" 
+           class="logo header__logo cart__logo"
+           alt="Crazybaby_logo"
+           width="161"
            height="26">
     </a>
     <span class="cart__close"></span>
     <div class="cart__way">
       CART
     </div>
-    <h3 class="cart__title">LUNA EYE</h3>
-    <p class="cart__price">$129.00</p>
-    <img src="img/cart__image.png" class="cart__img">
-    <div class="cart__color-container cart__color-container--outer">
-      <input type="radio" class="cart__color-choose cart__color-choose--silver">
-      <input type="radio" class="cart__color-choose cart__color-choose--grey">
-      <input type="radio" class="cart__color-choose cart__color-choose--bronze">
-      <input type="radio" class="cart__color-choose cart__color-choose--gold">
-      <input type="radio" class="cart__color-choose cart__color-choose--space">
-      <p class="cart__color-signature">Silver</p>
+    <div class="cart__container cart__container--outer">
+      <div class="cart__product">
+        <h3 class="cart__title">LUNA EYE</h3>
+        <p class="cart__price">$129.00</p>
+        <img src="img/cart__image.png" class="cart__img">
+        <div class="cart__color-container cart__color-container--outer">
+          <input type="radio" class="cart__color-choose cart__color-choose--silver">
+          <input type="radio" class="cart__color-choose cart__color-choose--grey">
+          <input type="radio" class="cart__color-choose cart__color-choose--bronze">
+          <input type="radio" class="cart__color-choose cart__color-choose--gold">
+          <input type="radio" class="cart__color-choose cart__color-choose--space">
+          <p class="cart__color-signature">Silver</p>
+        </div>
+        <div class="cart__amount cart__amount--outer">
+          <span class="cart__price-down"></span>
+          <input type="number" class="cart__value" value="1" min="1" max="10">
+          <span class="cart__price-up"></span>
+        </div>
+        <button class="button button--cart button--cart--outer">add TO CARD</button>
+        <p class="cart__shipping-info">
+          Free Shipping + Free Returns
+        </p>
+      </div>
+      <span class="cart__separator"></span>
+      <div class="cart__order">
+        <p class="cart__order-summary">Order Summary</p>
+        <p class="cart__total">Total:</p>
+        <p class="cart__order-price">$129.00</p>
+        <button class="button button--order button--order--outer">CONTINUE</button>
+      </div>
     </div>
-    <div class="cart__amount cart__amount--outer">
-      <span class="cart__price-down"></span>
-      <input type="number" class="cart__value" value="1" min="1" max="10">
-      <span class="cart__price-up"></span>
-    </div>
-    <button class="button button--cart button--cart--outer">add TO CARD</button>
-    <span class="cart__separator"></span>
-    <p class="cart__shipping-info">
-      Free Shipping + Free Returns
-    </p>
-    <p class="cart__order-summary">Order Summary</p>
-    <p class="cart__total">Total:</p>
-    <p class="cart__order-price">$129.00</p>
-    <button class="button button--order button--order--outer">CONTINUE</button>
   </section>
 </body>
 </html>
