@@ -1,23 +1,74 @@
 @import './src/sass/variables.scss';
 
 .button {
-  width: 102px;
-  height: 40px;
+  display: block;
+  width: 100%;
   box-sizing: border-box;
+  border: none;
+  padding: 10px;
 
   font-family: $ff-hmedium;
   font-size: $fs - 2;
   line-height: $lh - 6;
 
-  border: 1px solid #0DB2B3;
-  background-color: #0DB2B3;
-  color: #fff;
-  cursor: pointer;
+  text-transform: uppercase;
   outline: none;
 
-  &:hover,
-  &:focus {
-    background-color: #fff;
-    color: #0DB2B3;
+  &--question {
+    width: 102px;
+    height: 40px;
+
+    background-color: #0DB2B3;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #0C797A;
+    }
+    
+    &:disabled {
+      background-color: #CFEFF0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--question {
+      height: 48px;
+    }
+  }
+
+  &--cart {
+    display: block;
+    width: 160px;
+    height: 48px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    border: 1px solid #333333;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: #131313;
+      border: none;
+      color: #fff;
+    }
+
+    &--outer {
+      margin-bottom: 40px;
+    }
+  }
+
+  &--order {
+    width: 120px;
+    height: 49px;
+    margin: 0 auto;
+
+    background-color: #333333;
+    color: #fff;
+
+    &--outer {
+      margin-bottom: 90px;
+    }
   }
 }

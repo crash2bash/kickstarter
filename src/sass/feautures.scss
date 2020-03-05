@@ -1,6 +1,7 @@
 @import './src/sass/variables.scss';
 
 .feautures {
+  width: $mobile;
   margin-bottom: 45px;
   padding: 45px 0;
   background-color: #f2f2f2;
@@ -60,6 +61,7 @@
 
 @media (min-width: $tablet) {
   .feautures {
+    width: $tablet;
     position: relative;
     padding: 0;
     background-color: #f7f7f7;
@@ -145,7 +147,7 @@
 
 @media (min-width: $desktop) {
   .feautures {
-
+    width: $desktop;
     &--outer {
       
     }

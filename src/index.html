@@ -164,7 +164,7 @@
         <form action="GET" class="question__form">
           <input class="question__form-input question__form-input--email" type="email" placeholder="Your email" required>
           <textarea class="question__form-input question__message" type="text" placeholder="Your message..." required></textarea>
-          <button class="question__button button">SEND</button>
+          <button class="button button--question">SEND</button>
         </form>
       </div>
     </section>
@@ -199,5 +199,34 @@
     </div>
   </footer>
   <script src="js/slider.js"></script>
+
+  <section class="cart cart--buy">
+    <span class="cart__close"></span>
+    <h3 class="cart__title">LUNA EYE</h3>
+    <p class="cart__price">$129.00</p>
+    <img src="img/cart__image.png" class="cart__img">
+    <div class="cart__color-container">
+      <input type="radio" class="cart__color-choose cart__color-choose--silver">
+      <input type="radio" class="cart__color-choose cart__color-choose--grey">
+      <input type="radio" class="cart__color-choose cart__color-choose--bronze">
+      <input type="radio" class="cart__color-choose cart__color-choose--gold">
+      <input type="radio" class="cart__color-choose cart__color-choose--space">
+    </div>
+    <p class="cart__color-signature">Silver</p>
+    <div class="cart__amount cart__amount--outer">
+      <span class="cart__price-down"></span>
+      <input type="number" class="cart__value" value="1" min="1" max="10">
+      <span class="cart__price-up"></span>
+    </div>
+    <button class="button button--cart button--cart--outer">add TO CARD</button>
+    <span class="cart__separator"></span>
+    <p class="cart__shipping-info">
+      Free Shipping + Free Returns
+    </p>
+    <p class="cart__order-summary">Order Summary</p>
+    <p class="cart__total">Total:</p>
+    <p class="cart__order-price">$129.00</p>
+    <button class="button button--order button--order--outer">CONTINUE</button>
+  </section>
 </body>
 </html>
