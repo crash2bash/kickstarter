@@ -10,15 +10,31 @@
 <body>
   <header class="header">
       <div class="header__container">
-        <a href="#" class="logo-link header__logo-link"><img class="logo header__logo" src="img/logo.svg" alt="Crazybaby_logo" width="161" height="26"></a>
+        <a href="#" class="logo-link header__logo-link">
+          <img src="img/logo.svg" 
+               class="logo header__logo" 
+               alt="Crazybaby_logo" 
+               width="161" 
+               height="26">
+        </a>
         <span class="header__sandwich"></span>
         <nav class="navigation">
           <ul class="navigation-list">
-            <a class="navigation-list__link" href="#"><li class="navigation-list__item">OUR STORY</li></a>
-            <a class="navigation-list__link" href="#"><li class="navigation-list__item">ABOUT US</li></a>
-            <a class="navigation-list__link" href="#"><li class="navigation-list__item">TECHNOLOGY</li></a>
-            <a class="navigation-list__link" href="#"><li class="navigation-list__item">FEATURES</li></a>
-            <a class="navigation-list__link" href="#"><li class="navigation-list__item">GET IN TOUCH</li></a>
+            <a class="navigation-list__link" href="#">
+              <li class="navigation-list__item">OUR STORY</li>
+            </a>
+            <a class="navigation-list__link" href="#">
+              <li class="navigation-list__item">ABOUT US</li>
+            </a>
+            <a class="navigation-list__link" href="#">
+              <li class="navigation-list__item">TECHNOLOGY</li>
+            </a>
+            <a class="navigation-list__link" href="#">
+              <li class="navigation-list__item">FEATURES</li>
+            </a>
+            <a class="navigation-list__link" href="#">
+              <li class="navigation-list__item">GET IN TOUCH</li>
+            </a>
           </ul>
         </nav>
       </div>
@@ -201,18 +217,28 @@
   <script src="js/slider.js"></script>
 
   <section class="cart cart--buy">
+    <a href="#" class="cart__logo logo-link">
+      <img src="img/logo.svg" 
+           class="logo header__logo" 
+           alt="Crazybaby_logo" 
+           width="161" 
+           height="26">
+    </a>
     <span class="cart__close"></span>
+    <div class="cart__way">
+      CART
+    </div>
     <h3 class="cart__title">LUNA EYE</h3>
     <p class="cart__price">$129.00</p>
     <img src="img/cart__image.png" class="cart__img">
-    <div class="cart__color-container">
+    <div class="cart__color-container cart__color-container--outer">
       <input type="radio" class="cart__color-choose cart__color-choose--silver">
       <input type="radio" class="cart__color-choose cart__color-choose--grey">
       <input type="radio" class="cart__color-choose cart__color-choose--bronze">
       <input type="radio" class="cart__color-choose cart__color-choose--gold">
       <input type="radio" class="cart__color-choose cart__color-choose--space">
+      <p class="cart__color-signature">Silver</p>
     </div>
-    <p class="cart__color-signature">Silver</p>
     <div class="cart__amount cart__amount--outer">
       <span class="cart__price-down"></span>
       <input type="number" class="cart__value" value="1" min="1" max="10">

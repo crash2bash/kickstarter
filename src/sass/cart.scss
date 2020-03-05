@@ -5,9 +5,25 @@
   width: $mobile;
   margin: 0 auto;
   padding: 0 30px;
-  
+
   &--buy {
     display: block;
+  }
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 34px;
+    display: grid;
+    grid-template-columns: 435px 333px;
+    // grid-template-rows: repeat(10, 1fr);
+  }
+
+  &__logo {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
   }
 
   &__close {
@@ -15,7 +31,8 @@
     display: block;
     cursor: pointer;
     padding: 20px;
-    
+    grid-row-start: 2;
+
     &::after {
       content: "";
       position: absolute;
@@ -26,6 +43,22 @@
       height: 13px;
       background-image: url(../img/cross_icon.png);
 
+      @media (min-width: $tablet) {
+        background-image: url(../img/arrow-back.png);
+        left: 0;
+        top: 30%;
+        transform: translate(0, -30%);
+        grid-row-start: 2;
+      }
+    }
+  }
+
+  &__way {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      grid-row-start: 3;
     }
   }
 
@@ -35,6 +68,13 @@
     line-height: 45px;
     margin-bottom: 20px;
     text-align: center;
+
+    @media (min-width: $tablet) {
+      grid-row-start: 5;
+      font-style: 48px;
+      line-height: 60px;
+
+    }
   }
 
   &__price {
@@ -42,6 +82,15 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+      grid-row-start: 6;
+      line-height: 36px;
+      align-self: center;
+
+      font-family: $ff-dbold;
+    }
   }
 
   &__img {
@@ -49,11 +98,21 @@
     height: 194px;
     display: block;
     margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      grid-row-start: 4;
+      width: 473px;
+      height: 419px;
+    }
   }
 
   &__color-container {
     width: 236px;
     margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      grid-row-start: 7;
+    }
   }
 
   &__color-signature {
@@ -63,7 +122,10 @@
 
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;
+
+    &--outer {
+      margin-bottom: 40px;
+    }
   }
 
   &__amount {
@@ -73,6 +135,10 @@
 
     &--outer {
       margin-bottom: 40px;
+    }
+
+    @media (min-width: $tablet) {
+      grid-row-start: 8;
     }
   }
 
@@ -139,6 +205,10 @@
       left: -25%;
       transform: translate(-25%, -5%);
     }
+
+    @media (min-width: $tablet) {
+      grid-row-start: 10;
+    }
   }
 
   &__order-summary {
@@ -151,6 +221,12 @@
 
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+      grid-row-start: 6;
+      align-self: top;
+    }
   }
 
   &__total {
@@ -162,6 +238,13 @@
 
     text-align: center;
     color: #4f4f4f;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+      grid-column-start: 2;
+      grid-row-start: 8;
+      align-self: start;
+    }
   }
 
   &__order-price {
@@ -172,6 +255,13 @@
     line-height: 30px;
 
     text-align: center;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+      grid-column-start: 2;
+      grid-row-start: 8;
+      align-self: end;
+    }
   }
 }
 

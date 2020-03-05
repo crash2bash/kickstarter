@@ -57,6 +57,25 @@
     &--outer {
       margin-bottom: 40px;
     }
+
+    @media (min-width: $tablet) {
+      position: relative;
+      grid-row-start: 9;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 331px;
+        height: 1px;
+
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        margin-top: 30px;
+
+        background-color: #e0e0e0;
+      }
+    }
   }
 
   &--order {
@@ -69,6 +88,36 @@
 
     &--outer {
       margin-bottom: 90px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #131313;
+    }
+
+    &:disabled {
+      opacity: 0;
+    }
+
+    @media (min-width: $tablet) {
+      position: relative;
+      grid-row-start: 9;
+      width: 174px;
+      height: 48px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 403px;
+
+        top: 100%;
+        left: 0;
+        transform: translate(0, -100%);
+        margin-left: -49px;
+
+        background-color: #e0e0e0;
+      }
     }
   }
 }
