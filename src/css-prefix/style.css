@@ -145,6 +145,18 @@
     @media (min-width: 768px) {
       .button--fixed {
         display: none; } }
+  .button--up {
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    width: 24px;
+    height: 20px;
+    padding: 40px;
+    background-image: url(../img/arrow-up.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer; }
 
 .header__container {
   width: 260px;
