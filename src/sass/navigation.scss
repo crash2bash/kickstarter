@@ -13,6 +13,17 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  color: #4f4f4f;
+
+  &--active-lang {
+    color: #333333;
+    line-height: 18px;
+  }
+
+  &--deactive-lang {
+    color: #bdbdbd;
+    line-height: 18px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -21,8 +32,12 @@
   }
 
   .navigation-list {
-    width: 500px;
+    margin-top: 27px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+      margin-left: 27px;
+    }
   }
 }

@@ -8,12 +8,21 @@
   color: #333333;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #4f4f4f; }
+  .navigation-list__link--active-lang {
+    color: #333333;
+    line-height: 18px; }
+  .navigation-list__link--deactive-lang {
+    color: #bdbdbd;
+    line-height: 18px; }
 
 @media (min-width: 768px) {
   .navigation {
     display: block; }
   .navigation-list {
-    width: 500px;
+    margin-top: 27px;
     display: flex;
-    justify-content: space-between; } }
+    align-items: center; }
+    .navigation-list__item {
+      margin-left: 27px; } }

@@ -15,6 +15,23 @@
   outline: none;
   transition: 0.3s ease-in-out;
 
+  &--nav {
+    width: 102px;
+    height: 48px;
+    box-sizing: border-box;
+
+    background-color: #333333;
+    color: #fff;
+
+    &:hover {
+      background-color: #131313;
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
   &--question {
     width: 102px;
     height: 40px;

@@ -10,6 +10,16 @@
   text-transform: uppercase;
   outline: none;
   transition: 0.3s ease-in-out; }
+  .button--nav {
+    width: 102px;
+    height: 48px;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #fff; }
+    .button--nav:hover {
+      background-color: #131313; }
+    .button--nav:disabled {
+      background-color: transparent; }
   .button--question {
     width: 102px;
     height: 40px;
