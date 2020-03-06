@@ -78,6 +78,10 @@
         background-color: #e0e0e0;
       }
     }
+
+    @media (min-width: $desktop) {
+      width: 174px;
+    }
   }
 
   &--order {

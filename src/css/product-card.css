@@ -1,0 +1,69 @@
+.product-card {
+  display: grid;
+  grid-template-columns: 85px 170px;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 25px;
+  width: 260px;
+  height: 153px;
+  box-sizing: border-box;
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .product-card {
+      position: relative;
+      width: 520px;
+      height: 118px;
+      grid-template-columns: 122px 398px;
+      grid-template-rows: 118px;
+      align-items: center;
+      padding: 0;
+      margin-top: 100px; } }
+  .product-card__close {
+    grid-column-start: 2;
+    width: 12px;
+    height: 12px;
+    margin-left: auto;
+    margin-top: 21px;
+    margin-right: 21px;
+    background-image: url(../img/cross_icon.png);
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .product-card__close {
+        margin: 0;
+        position: absolute;
+        top: 21px;
+        right: 21px; } }
+  .product-card__photo {
+    grid-column-start: 1;
+    width: 90px;
+    height: 85px; }
+    @media (min-width: 768px) {
+      .product-card__photo {
+        grid-row-start: 1;
+        justify-self: end; } }
+  .product-card__container {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .product-card__container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center; } }
+  .product-card__value {
+    width: 50px; }
+  .product-card__color {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 17px; }
+    @media (min-width: 768px) {
+      .product-card__color {
+        margin: 0; } }
+  .product-card__def {
+    color: #7c7c7c; }
+  .product-card--outer {
+    margin-bottom: 30px; }

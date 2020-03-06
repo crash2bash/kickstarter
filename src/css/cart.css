@@ -9,6 +9,11 @@
     .cart {
       width: 700px;
       padding: 0 34px; } }
+  @media (min-width: 1440px) {
+    .cart {
+      width: 1440px;
+      padding: 0;
+      margin: 0 auto; } }
   .cart__logo-container {
     display: none; }
     @media (min-width: 768px) {
@@ -50,11 +55,19 @@
       justify-content: center; }
       .cart__container--outer {
         margin-bottom: 131px; } }
+  @media (min-width: 1440px) {
+    .cart__container {
+      grid-template-columns: 300px 331px 174px;
+      gap: 0 100px; } }
   @media (min-width: 768px) {
     .cart__product {
       display: flex;
       flex-direction: column;
       justify-content: center; } }
+  @media (min-width: 1440px) {
+    .cart__product {
+      position: relative;
+      grid-column-start: 2; } }
   @media (min-width: 768px) {
     .cart__order {
       display: grid;
@@ -63,6 +76,9 @@
       grid-row-start: 1;
       align-self: end;
       margin-bottom: 91px; } }
+  @media (min-width: 1440px) {
+    .cart__order {
+      grid-column-start: 3; } }
   .cart__title {
     font-family: "Din Bold";
     font-size: 36px;
@@ -86,6 +102,9 @@
         line-height: 36px;
         margin: 0;
         margin-bottom: 54px; } }
+    @media (min-width: 1440px) {
+      .cart__price {
+        line-height: 30px; } }
   .cart__img {
     width: 194px;
     height: 194px;
@@ -98,6 +117,11 @@
         margin-bottom: 60px;
         order: -1;
         margin-left: 85px; } }
+    @media (min-width: 1440px) {
+      .cart__img {
+        position: absolute;
+        left: -70%;
+        transform: translate(-70%, 0); } }
   .cart__color-container {
     width: 236px;
     margin: 0 auto; }
@@ -122,14 +146,15 @@
       .cart__color-signature {
         margin: 0;
         width: 200px; } }
-  @media (min-width: 768px) {
-    .cart__amount {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 50px; }
+  .cart__amount {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .cart__amount--outer {
+      margin-bottom: 40px; }
+    @media (min-width: 768px) {
       .cart__amount--outer {
-        margin-bottom: 40px; } }
+        margin-bottom: 50px; } }
   .cart__price-down {
     width: 12px;
     padding: 18px;
@@ -157,7 +182,7 @@
     position: relative;
     line-height: 17px;
     color: #4F4F4F;
-    margin-left: 100px;
+    margin-left: 60px;
     margin-bottom: 93px;
     justify-self: end; }
     .cart__shipping-info::before {
@@ -174,6 +199,7 @@
         font-family: "Helvetica Medium";
         font-size: 16px;
         line-height: 20px;
+        margin-left: 100px;
         margin-bottom: 0;
         margin-top: 0; } }
   .cart__order-summary {

@@ -51,6 +51,9 @@
           transform: translate(-40%, -100%);
           margin-top: 30px;
           background-color: #e0e0e0; } }
+    @media (min-width: 1440px) {
+      .button--cart {
+        width: 174px; } }
   .button--order {
     width: 120px;
     height: 49px;
