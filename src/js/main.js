@@ -9,8 +9,9 @@ const addProductItem = document.querySelector(".cart__price-up");
 const valueOfProduct = document.querySelectorAll(".cart__value");
 const removeProductItem = document.querySelector(".cart__price-down");
 const showMobileMenu = document.querySelector(".header__sandwich");
-const header = document.querySelector(".header");
 const navigationList = document.querySelector(".header-list");
+const closeButton = document.querySelector(".header__close");
+const upButton = document.querySelector(".button--up");
 let inputValue = 1;
 
 buyButton.addEventListener("click", function() {
@@ -39,7 +40,17 @@ removeProductItem.addEventListener("click", function() {
   }
 });
 
-showMobileMenu.addEventListener("click", function() {
-  header.classList.add("header--animation");
-  navigationList.classList.add("navigation-list--animation");
+window.onscroll = function() {
+  if (window.pageYOffset > 1200) {
+    upButton.classList.add("show");
+  } else {
+    upButton.classList.remove("show");
+  }
+};
+
+upButton.addEventListener("click", function() {
+  document.documentElement.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
 });

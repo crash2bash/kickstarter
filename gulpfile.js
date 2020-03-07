@@ -24,7 +24,8 @@ gulp.task('sass', function () {
 
 gulp.task("watch", function() {
     browserSync.init({
-        server: "src"
+      server: "src",
+      notify: false
     });
     gulp.watch('src/sass/**/*.scss', gulp.parallel('sass')).on('change', browserSync.reload);
     gulp.watch('src/css/style.css', gulp.parallel('prefix')).on('change', browserSync.reload);

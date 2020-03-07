@@ -27,6 +27,12 @@
       background-image: url(../img/lighting.svg); }
     .advantages__list-item:last-child {
       margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .advantages__list-item {
+        display: grid;
+        grid-template-rows: 30px 105px;
+        gap: 20px 0;
+        margin: 0; } }
   .advantages__title {
     position: relative;
     margin-bottom: 50px;
@@ -49,10 +55,9 @@
       display: grid;
       grid-template-columns: 340px 340px;
       gap: 155px 20px; }
-    .advantages__list-item {
-      margin: 0; }
     .advantages__title {
-      margin: 0 0 20px 0; }
+      margin: 0 0 20px 0;
+      margin: 0; }
     .advantages__text {
       margin: 0; } }
 
@@ -65,4 +70,6 @@
     .advantages__list-item {
       display: grid;
       grid-template-rows: 30px 126px;
-      gap: 50px 0; } }
+      gap: 50px 0; }
+  .advantages__title {
+    margin: 0; } }

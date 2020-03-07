@@ -14,6 +14,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 22px;
+  
 
     @media (min-width: $tablet) {
       width: 700px;
@@ -25,6 +26,7 @@
   }
 
   &__logo-link {
+    z-index: 2;
     @media (min-width: $tablet) {
       line-height: 0;
     }
@@ -39,7 +41,6 @@
     box-sizing: border-box;
     width: 24px;
     height: 14px;
-    padding: 5px 5px;
 
     background-image: url(/img/sandwhich.svg);
     background-repeat: no-repeat;
@@ -50,12 +51,30 @@
       display: none;
     }
   }
+
+  &__close {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 27px;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 24px;
+    height: 14px;
+
+    background-image: url(../img/cross_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
 }
 
 .header-list {
-  width: $mc-width;
-  display: none;
   position: absolute;
+  z-index: 1;
   top: 68px;
   left: 0;
   width: 320px;
@@ -63,7 +82,7 @@
 
   list-style: none;
   padding: 0;
-  background-color: #d0d0d0;
+  background-color: #4f4f4f;
 
   @media (min-width: $tablet) {
     width: 253px;

@@ -45,6 +45,13 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-rows: 30px 105px;
+      gap: 20px 0;
+      margin: 0;
+    }
   }
 
   &__title {
@@ -79,12 +86,10 @@
     gap: 155px 20px;
   }
 
-  &__list-item {
-    margin: 0;
-  }
-
   &__title {
     margin: 0 0 20px 0;
+    margin: 0;
+    
   }
 
   &__text {
@@ -109,6 +114,10 @@
         grid-template-rows: 30px 126px;
         gap: 50px 0;
       }
+    }
+
+    &__title {
+      margin: 0;
     }
   }
 }

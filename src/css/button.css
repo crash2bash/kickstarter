@@ -123,6 +123,7 @@
       .button--fixed {
         display: none; } }
   .button--up {
+    display: none;
     position: fixed;
     top: 80%;
     left: 80%;

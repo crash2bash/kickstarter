@@ -17,9 +17,11 @@
     .header__container {
       width: 1194px; } }
 
-@media (min-width: 768px) {
-  .header__logo-link {
-    line-height: 0; } }
+.header__logo-link {
+  z-index: 2; }
+  @media (min-width: 768px) {
+    .header__logo-link {
+      line-height: 0; } }
 
 .header__logo {
   padding: 28px 0 22px 0; }
@@ -29,7 +31,6 @@
   box-sizing: border-box;
   width: 24px;
   height: 14px;
-  padding: 5px 5px;
   background-image: url(/img/sandwhich.svg);
   background-repeat: no-repeat;
   cursor: pointer; }
@@ -37,17 +38,32 @@
     .header__sandwich {
       display: none; } }
 
-.header-list {
-  width: 260px;
+.header__close {
   display: none;
   position: absolute;
+  top: 25px;
+  right: 27px;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 24px;
+  height: 14px;
+  background-image: url(../img/cross_icon.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 768px) {
+    .header__close {
+      display: none; } }
+
+.header-list {
+  position: absolute;
+  z-index: 1;
   top: 68px;
   left: 0;
   width: 320px;
   text-align: center;
   list-style: none;
   padding: 0;
-  background-color: #d0d0d0; }
+  background-color: #4f4f4f; }
   @media (min-width: 768px) {
     .header-list {
       width: 253px;
