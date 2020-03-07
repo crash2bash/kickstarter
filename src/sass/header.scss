@@ -75,7 +75,15 @@
 
     &__item:not(:first-child) {
       margin-left: 27px;
+
+      @media (min-width: $desktop) {
+        margin-left: 37px;
+      }
     }
+  }
+
+  @media (min-width: $desktop) {
+    width: 276px;
   }
 
   @media (min-width: $desktop) {

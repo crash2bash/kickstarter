@@ -1,2 +1,40 @@
 @import './src/sass/variables.scss';
 
+.navigation {
+  display: none;
+
+  @media (min-width: $desktop) {
+    width: 786px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    width: 173px;
+    text-transform: uppercase;
+  }
+
+  &__list-link {
+    
+    text-decoration: none;
+    color: #333333;
+
+    &:hover {
+      font-family: $ff-hmedium;
+      color: #131313;
+    }
+  }
+
+  &--outer {
+    margin-bottom: 169px;
+  }
+}

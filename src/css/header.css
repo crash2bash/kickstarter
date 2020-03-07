@@ -57,6 +57,12 @@
       background-color: transparent; }
       .header-list__item:not(:first-child) {
         margin-left: 27px; } }
+    @media (min-width: 768px) and (min-width: 1440px) {
+      .header-list__item:not(:first-child) {
+        margin-left: 37px; } }
+  @media (min-width: 1440px) {
+    .header-list {
+      width: 276px; } }
   @media (min-width: 1440px) {
     .header-list {
       margin-top: 13px; } }

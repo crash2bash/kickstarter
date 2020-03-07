@@ -1,0 +1,24 @@
+.navigation {
+  display: none; }
+  @media (min-width: 1440px) {
+    .navigation {
+      width: 786px;
+      display: block;
+      margin: 0 auto; } }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .navigation__list-item {
+    width: 173px;
+    text-transform: uppercase; }
+  .navigation__list-link {
+    text-decoration: none;
+    color: #333333; }
+    .navigation__list-link:hover {
+      font-family: "Helvetica Medium";
+      color: #131313; }
+  .navigation--outer {
+    margin-bottom: 169px; }
