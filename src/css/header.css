@@ -1,3 +1,7 @@
+@media (min-width: 768px) {
+  .header {
+    display: block; } }
+
 .header__container {
   width: 260px;
   display: flex;
@@ -6,6 +10,16 @@
   flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 22px; }
+  @media (min-width: 768px) {
+    .header__container {
+      width: 700px; } }
+  @media (min-width: 1440px) {
+    .header__container {
+      width: 1194px; } }
+
+@media (min-width: 768px) {
+  .header__logo-link {
+    line-height: 0; } }
 
 .header__logo {
   padding: 28px 0 22px 0; }
@@ -19,13 +33,62 @@
   background-image: url(/img/sandwhich.svg);
   background-repeat: no-repeat;
   cursor: pointer; }
+  @media (min-width: 768px) {
+    .header__sandwich {
+      display: none; } }
 
-@media (min-width: 768px) {
-  .header__sandwich {
-    display: none; }
-  .header__container {
-    width: 700px; } }
-
-@media (min-width: 1440px) {
-  .header__container {
-    width: 1194px; } }
+.header-list {
+  width: 260px;
+  display: none;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 320px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  background-color: #d0d0d0; }
+  @media (min-width: 768px) {
+    .header-list {
+      width: 253px;
+      margin-top: 27px;
+      display: flex;
+      align-items: center;
+      background-color: transparent; }
+      .header-list__item:not(:first-child) {
+        margin-left: 27px; } }
+  @media (min-width: 1440px) {
+    .header-list {
+      margin-top: 13px; } }
+  .header-list__item {
+    margin: 20px 0; }
+    @media (min-width: 768px) {
+      .header-list__item {
+        margin: 0; } }
+    .header-list__item--none {
+      display: none; }
+      @media (min-width: 768px) {
+        .header-list__item--none {
+          display: block; } }
+  @media (min-width: 768px) {
+    .header-list {
+      position: static; } }
+  .header-list__link {
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4f4f4f; }
+    @media (min-width: 768px) {
+      .header-list__link {
+        color: #4f4f4f; } }
+    @media (min-width: 768px) {
+      .header-list__link--active-lang {
+        color: #333333;
+        line-height: 18px; } }
+    .header-list__link--deactive-lang {
+      color: #d0d0d0; }
+      @media (min-width: 768px) {
+        .header-list__link--deactive-lang {
+          color: #bdbdbd;
+          line-height: 18px; } }

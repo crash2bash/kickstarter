@@ -34,6 +34,27 @@
   100% {
     opacity: 100%; } }
 
+.header--animation {
+  animation: changeColor 1s ease-in-out forwards; }
+
+@keyframes changeColor {
+  0% {
+    background-color: #f7f7f7; }
+  100% {
+    background-color: #d0d0d0; } }
+
+.navigation-list--animation {
+  display: block;
+  animation: showMobileMenu 0.9s ease-in-out; }
+
+@keyframes showMobileMenu {
+  0% {
+    transform: translate(0, -100px);
+    opacity: 0; }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1; } }
+
 @media (min-width: 768px) {
   .scroll {
     display: block; } }

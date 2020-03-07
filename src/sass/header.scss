@@ -2,6 +2,10 @@
 
 .header {
 
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
   &__container {
     width: $mc-width;
     display: flex;
@@ -10,6 +14,20 @@
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 22px;
+
+    @media (min-width: $tablet) {
+      width: 700px;
+    }
+
+    @media (min-width: $desktop) {
+      width: $dc-width;
+    }
+  }
+
+  &__logo-link {
+    @media (min-width: $tablet) {
+      line-height: 0;
+    }
   }
 
   &__logo {
@@ -27,26 +45,89 @@
     background-repeat: no-repeat;
 
     cursor: pointer;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
-@media (min-width: 768px) {
-  .header {
+.header-list {
+  width: $mc-width;
+  display: none;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 320px;
+  text-align: center;
 
-  &__sandwich {
-    display: none;
+  list-style: none;
+  padding: 0;
+  background-color: #d0d0d0;
+
+  @media (min-width: $tablet) {
+    width: 253px;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+
+    &__item:not(:first-child) {
+      margin-left: 27px;
+    }
   }
 
-  &__container {
-    width: 700px;
+  @media (min-width: $desktop) {
+    margin-top: 13px;
   }
-}
-}
 
-@media (min-width: $desktop) {
-  .header {
-    &__container {
-      width: $dc-width;
+  &__item {
+    margin: 20px 0;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
+
+    &--none {
+      display: none;
+
+      @media (min-width: $tablet) {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    position: static;
+  }
+
+
+  &__link {
+    color: $text-color;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4f4f4f;
+
+    @media (min-width: $tablet) {
+      color: #4f4f4f;
+    }
+
+    &--active-lang {
+      @media (min-width: $tablet) {
+        color: #333333;
+        line-height: 18px;
+      }
+    }
+
+    &--deactive-lang {
+      color: #d0d0d0;
+      
+      @media (min-width: $tablet) {
+        color: #bdbdbd;
+        line-height: 18px;
+      }
     }
   }
 }
