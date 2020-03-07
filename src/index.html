@@ -271,7 +271,7 @@
         <p class="cart__order-summary">Order Summary</p>
         <p class="cart__total">Total:</p>
         <p class="cart__order-price">$129.00</p>
-        <button class="button button--order button--order--outer">CONTINUE</button>
+        <button class="button button--order button--order--pseudo button--order--outer">CONTINUE</button>
       </div>
     </div>
   </section>
@@ -304,6 +304,27 @@
       </p>
     </div>
   </footer>
+
+  <section class="shipping">
+    <form class="shipping__form shipping__form--outer">
+      <span class="shipping__placeholder shipping__placeholder--name">First and Last Name *</span>
+      <input type="text" class="shipping__input shipping__input--outer shipping__input--name" placeholder="First and Last Name *" required>
+      <span class="shipping__placeholder shipping__placeholder--email">Email *</span>
+      <input type="email" class="shipping__input shipping__input--outer shipping__input--email" placeholder="Email *" required>
+      <span class="shipping__placeholder shipping__placeholder--phone">Phone number *</span>
+      <input type="tel" class="shipping__input shipping__input--outer shipping__input--phone" placeholder="Phone number *" required>
+      <span class="shipping__placeholder shipping__placeholder--country">Country *</span>
+      <input type="text" class="shipping__input shipping__input--outer shipping__input--country" placeholder="Country *" required>
+      <span class="shipping__placeholder shipping__placeholder--city">City *</span>
+      <input type="text" class="shipping__input shipping__input--outer shipping__input--city" placeholder="City *" required>
+      <span class="shipping__placeholder shipping__placeholder--address">Address *</span>
+      <input type="text" class="shipping__input shipping__input--address" placeholder="Address *" required>
+      <div class="shipping__buttons">
+        <a href="#" class="shipping__link">return to cart</a>
+        <button class="button button--order button--shipping">CONTINUE</button>
+      </div>
+    </form>
+  </section>
 
   <button class="button button--fixed"></button>
   <button class="button button--up"></button>

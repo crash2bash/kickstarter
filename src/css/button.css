@@ -89,7 +89,7 @@
         height: 48px;
         margin: 0;
         grid-row-start: 7; }
-        .button--order::after {
+        .button--order--pseudo::after {
           content: "";
           position: absolute;
           width: 1px;
@@ -135,3 +135,5 @@
     background-repeat: no-repeat;
     background-color: transparent;
     cursor: pointer; }
+    .button--up:hover {
+      animation: shake-horizontal 0.9s ease-in-out both; }

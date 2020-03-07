@@ -136,7 +136,7 @@
       margin: 0;
       grid-row-start: 7;
 
-      &::after {
+      &--pseudo::after {
         content: "";
         position: absolute;
         width: 1px;
@@ -199,5 +199,9 @@
     background-color: transparent;
 
     cursor: pointer;
+
+    &:hover {
+      animation: shake-horizontal 0.9s ease-in-out both;
+    }
   }
 }

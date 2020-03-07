@@ -1,0 +1,45 @@
+.shipping {
+  width: 320px; }
+  .shipping__form {
+    width: 260px;
+    margin: 0 auto; }
+  .shipping__input {
+    position: relative;
+    box-sizing: border-box;
+    width: 260px;
+    height: 47px;
+    padding: 1px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    outline: none; }
+    .shipping__input:focus, .shipping__input:active {
+      border-color: #0C797A; }
+    .shipping__input::placeholder {
+      font-size: 12px;
+      line-height: 14px; }
+    .shipping__input:focus::placeholder {
+      color: transparent; }
+    .shipping__input--outer {
+      margin-bottom: 29px; }
+  .shipping__placeholder {
+    opacity: 0;
+    position: relative;
+    color: rgba(12, 121, 122, 0.3);
+    font-size: 10px;
+    line-height: 12px; }
+  .shipping__link {
+    margin-right: 30px;
+    font-family: "Helvetica Medium";
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4f4f4f; }
+  .shipping__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.fake-placeholder {
+  opacity: 1; }

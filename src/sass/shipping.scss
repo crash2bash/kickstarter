@@ -1,0 +1,70 @@
+@import "variables";
+
+.shipping {
+  width: 320px;
+
+  &__form {
+    width: $mc-width;
+    margin: 0 auto;
+  }
+
+  &__input {
+    position: relative;
+    box-sizing: border-box;
+    width: 260px;
+    height: 47px;
+    padding: 1px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    outline: none;
+
+    &:focus,
+    &:active {
+      border-color: #0C797A;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+      }
+
+    &--outer {
+      margin-bottom: 29px;
+    }
+  }
+
+  &__placeholder {
+    opacity: 0;
+    position: relative;
+    color: rgba(12, 121, 122, 0.3);
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &__link {
+    margin-right: 30px;
+
+    font-family: $ff-hmedium;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4f4f4f;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.fake-placeholder {
+  opacity: 1;
+}
