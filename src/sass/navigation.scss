@@ -1,11 +1,44 @@
 @import './src/sass/variables.scss';
 
 .navigation {
-  display: none;
+  width: $mc-width;
+
+  @media (min-width: $tablet) {
+    width: 253px
+  }
 }
 
 .navigation-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  text-align: center;
+
   list-style: none;
+  padding: 0;
+  background-color: #4f4f4f;
+
+  @media (min-width: $tablet) {
+    width: 253px;
+    background-color: transparent;
+  }
+
+  &__item {
+    margin: 20px 0;
+
+    &--none {
+      display: none;
+
+      @media (min-width: $tablet) {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    position: static;
+  }
 }
 
 .navigation-list__link {
@@ -13,16 +46,26 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #4f4f4f;
+  color: #fff;
+
+  @media (min-width: $tablet) {
+    color: #4f4f4f;
+  }
 
   &--active-lang {
-    color: #333333;
-    line-height: 18px;
+    @media (min-width: $tablet) {
+      color: #333333;
+      line-height: 18px;
+    }
   }
 
   &--deactive-lang {
-    color: #bdbdbd;
-    line-height: 18px;
+    color: #d0d0d0;
+    
+    @media (min-width: $tablet) {
+      color: #bdbdbd;
+      line-height: 18px;
+    }
   }
 }
 
@@ -36,7 +79,7 @@
     display: flex;
     align-items: center;
 
-    &__item {
+    &__item:not(:first-child) {
       margin-left: 27px;
     }
   }

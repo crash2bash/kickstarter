@@ -26,12 +26,16 @@
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
   .button--nav {
+    display: none;
     width: 102px;
     height: 48px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #333333;
     color: #fff; }
+    @media (min-width: 768px) {
+      .button--nav {
+        display: block; } }
     .button--nav:hover {
       background-color: #131313; }
     .button--nav:disabled {
@@ -172,6 +176,9 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 22px; }
 
@@ -200,23 +207,54 @@
     width: 1194px; } }
 
 .navigation {
-  display: none; }
+  width: 260px; }
+  @media (min-width: 768px) {
+    .navigation {
+      width: 253px; } }
 
 .navigation-list {
-  list-style: none; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  background-color: #4f4f4f; }
+  @media (min-width: 768px) {
+    .navigation-list {
+      width: 253px;
+      background-color: transparent; } }
+  .navigation-list__item {
+    margin: 20px 0; }
+    .navigation-list__item--none {
+      display: none; }
+      @media (min-width: 768px) {
+        .navigation-list__item--none {
+          display: block; } }
+  @media (min-width: 768px) {
+    .navigation-list {
+      position: static; } }
 
 .navigation-list__link {
   color: #333333;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #4f4f4f; }
-  .navigation-list__link--active-lang {
-    color: #333333;
-    line-height: 18px; }
+  color: #fff; }
+  @media (min-width: 768px) {
+    .navigation-list__link {
+      color: #4f4f4f; } }
+  @media (min-width: 768px) {
+    .navigation-list__link--active-lang {
+      color: #333333;
+      line-height: 18px; } }
   .navigation-list__link--deactive-lang {
-    color: #bdbdbd;
-    line-height: 18px; }
+    color: #d0d0d0; }
+    @media (min-width: 768px) {
+      .navigation-list__link--deactive-lang {
+        color: #bdbdbd;
+        line-height: 18px; } }
 
 @media (min-width: 768px) {
   .navigation {
@@ -231,7 +269,7 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .navigation-list__item {
+    .navigation-list__item:not(:first-child) {
       margin-left: 27px; } }
 
 .content__image {
