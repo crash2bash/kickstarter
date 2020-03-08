@@ -91,7 +91,6 @@
     width: 120px;
     height: 49px;
     margin: 0 auto;
-    text-transform: uppercase;
     background-color: #333333;
     color: #fff;
     -webkit-transition: 0.3s ease-in-out;
@@ -1780,20 +1779,41 @@ input::-webkit-inner-spin-button {
 
 .shipping {
   width: 320px; }
+  @media (min-width: 768px) {
+    .shipping {
+      width: 768px; } }
+  @media (min-width: 1440px) {
+    .shipping {
+      width: 1440px; } }
   .shipping__form {
     width: 260px;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .shipping__form {
+        width: 340px; } }
+    @media (min-width: 1440px) {
+      .shipping__form {
+        width: 378px; } }
   .shipping__input {
     position: relative;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 260px;
     height: 47px;
-    padding: 1px;
+    padding: 5px;
+    font-family: "Helvetica Medium";
+    font-size: 14px;
+    line-height: 24px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #bdbdbd;
     outline: none; }
+    @media (min-width: 768px) {
+      .shipping__input {
+        width: 340px; } }
+    @media (min-width: 1440px) {
+      .shipping__input {
+        width: 378px; } }
     .shipping__input:focus, .shipping__input:active {
       border-color: #0C797A; }
     .shipping__input::-webkit-input-placeholder {
@@ -1823,6 +1843,8 @@ input::-webkit-inner-spin-button {
       color: transparent; }
     .shipping__input--outer {
       margin-bottom: 29px; }
+    .shipping__input--outer-last {
+      margin-bottom: 50px; }
   .shipping__placeholder {
     opacity: 0;
     position: relative;
@@ -1837,6 +1859,10 @@ input::-webkit-inner-spin-button {
     text-transform: uppercase;
     text-decoration: none;
     color: #4f4f4f; }
+    @media (min-width: 768px) {
+      .shipping__link {
+        font-family: "Helvetica";
+        line-height: 14px; } }
   .shipping__buttons {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1850,6 +1876,14 @@ input::-webkit-inner-spin-button {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .shipping__buttons--outer {
+      margin-bottom: 90px; }
+      @media (min-width: 768px) {
+        .shipping__buttons--outer {
+          margin-bottom: 130px; } }
+      @media (min-width: 1440px) {
+        .shipping__buttons--outer {
+          margin-bottom: 150px; } }
 
 .fake-placeholder {
   opacity: 1; }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Crazybaby</title>
 </head>
 
@@ -276,6 +277,27 @@
     </div>
   </section>
 
+  <section class="shipping">
+    <form class="shipping__form shipping__form--outer">
+      <span class="shipping__placeholder shipping__placeholder--name">First and Last Name *</span>
+      <input type="text" class="shipping__input shipping__input--outer shipping__input--name" placeholder="First and Last Name *" required>
+      <span class="shipping__placeholder shipping__placeholder--email">Email *</span>
+      <input type="email" class="shipping__input shipping__input--outer shipping__input--email" placeholder="Email *" required>
+      <span class="shipping__placeholder shipping__placeholder--phone">Phone number *</span>
+      <input type="tel" class="shipping__input shipping__input--outer shipping__input--phone" placeholder="Phone number *" required>
+      <span class="shipping__placeholder shipping__placeholder--country">Country *</span>
+      <input type="text" class="shipping__input shipping__input--outer shipping__input--country" placeholder="Country *" required>
+      <span class="shipping__placeholder shipping__placeholder--city">City *</span>
+      <input type="text" class="shipping__input shipping__input--outer shipping__input--city" placeholder="City *" required>
+      <span class="shipping__placeholder shipping__placeholder--address">Address *</span>
+      <input type="text" class="shipping__input shipping__input--outer-last shipping__input--address" placeholder="Address *" required>
+      <div class="shipping__buttons shipping__buttons--outer">
+        <a href="#" class="shipping__link">return to cart</a>
+        <button class="button button--order button--shipping">CONTINUE</button>
+      </div>
+    </form>
+  </section>
+
   <footer class="footer">
     <div class="container footer__container">
       <a href="#" class="logo-link footer__logo-link footer__logo-link-outer"><img class="logo footer__logo" src="img/logo.svg" alt="Crazybaby_logo" width="161" height="26"></a>
@@ -304,27 +326,6 @@
       </p>
     </div>
   </footer>
-
-  <section class="shipping">
-    <form class="shipping__form shipping__form--outer">
-      <span class="shipping__placeholder shipping__placeholder--name">First and Last Name *</span>
-      <input type="text" class="shipping__input shipping__input--outer shipping__input--name" placeholder="First and Last Name *" required>
-      <span class="shipping__placeholder shipping__placeholder--email">Email *</span>
-      <input type="email" class="shipping__input shipping__input--outer shipping__input--email" placeholder="Email *" required>
-      <span class="shipping__placeholder shipping__placeholder--phone">Phone number *</span>
-      <input type="tel" class="shipping__input shipping__input--outer shipping__input--phone" placeholder="Phone number *" required>
-      <span class="shipping__placeholder shipping__placeholder--country">Country *</span>
-      <input type="text" class="shipping__input shipping__input--outer shipping__input--country" placeholder="Country *" required>
-      <span class="shipping__placeholder shipping__placeholder--city">City *</span>
-      <input type="text" class="shipping__input shipping__input--outer shipping__input--city" placeholder="City *" required>
-      <span class="shipping__placeholder shipping__placeholder--address">Address *</span>
-      <input type="text" class="shipping__input shipping__input--address" placeholder="Address *" required>
-      <div class="shipping__buttons">
-        <a href="#" class="shipping__link">return to cart</a>
-        <button class="button button--order button--shipping">CONTINUE</button>
-      </div>
-    </form>
-  </section>
 
   <button class="button button--fixed"></button>
   <button class="button button--up"></button>

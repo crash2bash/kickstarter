@@ -3,9 +3,25 @@
 .shipping {
   width: 320px;
 
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
+
   &__form {
     width: $mc-width;
     margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      width: 340px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 378px;
+    }
   }
 
   &__input {
@@ -13,11 +29,24 @@
     box-sizing: border-box;
     width: 260px;
     height: 47px;
-    padding: 1px;
+    padding: 5px;
+
+    font-family: $ff-hmedium;
+    font-size: 14px;
+    line-height: 24px;
+
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #bdbdbd;
     outline: none;
+
+    @media (min-width: $tablet) {
+      width: 340px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 378px;
+    }
 
     &:focus,
     &:active {
@@ -35,6 +64,10 @@
 
     &--outer {
       margin-bottom: 29px;
+    }
+
+    &--outer-last {
+      margin-bottom: 50px;
     }
   }
 
@@ -56,12 +89,29 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #4f4f4f;
+
+    @media (min-width: $tablet) {
+      font-family: $ff-h;
+      line-height: 14px;
+    }
   }
 
   &__buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &--outer {
+      margin-bottom: 90px;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 130px;
+      }
+
+      @media (min-width: $desktop) {
+        margin-bottom: 150px;
+      }
+    }
   }
 }
 
