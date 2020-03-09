@@ -1,11 +1,34 @@
 .payment {
   width: 320px; }
+  .payment--outer {
+    margin-bottom: 90px; }
+  .payment__pictures {
+    width: 210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .payment__picture--master-card {
+    width: 33px;
+    height: 25px; }
+  .payment__picture--visa {
+    width: 40px;
+    height: 22px; }
+  .payment__picture--visa {
+    width: 40px;
+    height: 22px; }
+  .payment__picture--apple {
+    width: 38px;
+    height: 15px; }
+  .payment__picture--american {
+    width: 36px;
+    height: 24px; }
   .payment__form {
     width: 260px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 70px 60px 70px 60px;
-    grid-template-rows: repeat(3, 1fr); }
+    grid-template-rows: repeat(3, 1fr) 103px; }
   .payment__fieldset {
     border: none;
     margin: 0;
@@ -17,11 +40,16 @@
       font-size: 10px;
       line-height: 12px;
       color: rgba(12, 121, 122, 0.3); }
+    .payment__fieldset--outer {
+      margin-bottom: 7px; }
   .payment__input--expires {
+    padding: 3px;
     margin: 0;
     width: 27px; }
   .payment__input--cvc {
     width: 70px; }
+  .payment__input::placeholder {
+    color: #e0e0e0; }
   .payment__wrapper {
     width: 70px;
     display: flex;
@@ -39,3 +67,8 @@
   .payment__cvc {
     grid-column-start: 3;
     grid-row-start: 3; }
+  .payment__buttons {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    flex-direction: column-reverse; }

@@ -68,27 +68,27 @@
     @media (min-width: 1440px) {
       .button--cart {
         width: 174px; } }
-  .button--order {
+  .button__order {
     width: 120px;
     height: 49px;
-    margin: 0 auto;
+    margin: 0;
     background-color: #333333;
     color: #fff;
     transition: 0.3s ease-in-out; }
-    .button--order--outer {
-      margin-bottom: 90px; }
-    .button--order:hover, .button--order:focus {
+    .button__order--center {
+      margin: 0 auto; }
+    .button__order:hover, .button__order:focus {
       background-color: #131313; }
-    .button--order:disabled {
+    .button__order:disabled {
       opacity: 0; }
     @media (min-width: 768px) {
-      .button--order {
+      .button__order {
         position: relative;
         width: 174px;
         height: 48px;
         margin: 0;
         grid-row-start: 7; }
-        .button--order--pseudo::after {
+        .button__order--pseudo::after {
           content: "";
           position: absolute;
           width: 1px;

@@ -68,6 +68,10 @@
   }
 
   &__container {
+    &--outer {
+      margin-bottom: 90px;
+    }
+
     @media (min-width: $tablet) {
       display: grid;
       grid-template-columns: 331px 174px;

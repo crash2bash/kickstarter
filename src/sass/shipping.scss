@@ -3,6 +3,18 @@
 .shipping {
   width: 320px;
 
+  &--outer {
+    margin-bottom: 90px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 130px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 150px;
+    }
+  }
+
   @media (min-width: $tablet) {
     width: $tablet;
   }
@@ -33,41 +45,6 @@
     color: rgba(12, 121, 122, 0.3);
     font-size: 10px;
     line-height: 12px;
-  }
-
-  &__link {
-    margin-right: 30px;
-
-    font-family: $ff-hmedium;
-    font-size: 12px;
-    line-height: 15px;
-
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #4f4f4f;
-
-    @media (min-width: $tablet) {
-      font-family: $ff-h;
-      line-height: 14px;
-    }
-  }
-
-  &__buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &--outer {
-      margin-bottom: 90px;
-
-      @media (min-width: $tablet) {
-        margin-bottom: 130px;
-      }
-
-      @media (min-width: $desktop) {
-        margin-bottom: 150px;
-      }
-    }
   }
 }
 

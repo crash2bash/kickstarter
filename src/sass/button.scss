@@ -106,17 +106,17 @@
     }
   }
 
-  &--order {
+  &__order {
     width: 120px;
     height: 49px;
-    margin: 0 auto;
+    margin: 0;
 
     background-color: #333333;
     color: #fff;
     transition: 0.3s ease-in-out;
 
-    &--outer {
-      margin-bottom: 90px;
+    &--center {
+      margin: 0 auto;
     }
 
     &:hover,

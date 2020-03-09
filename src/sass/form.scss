@@ -31,8 +31,12 @@
     }
 
     &::placeholder {
+      font-family: $ff-h;
+
       font-size: 12px;
       line-height: 14px;
+
+      color: #7c7c7c;
     }
 
     &:focus::placeholder {
@@ -46,5 +50,26 @@
     &--outer-last {
       margin-bottom: 50px;
     }
+  }
+
+  &__link {
+    font-family: $ff-hmedium;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4f4f4f;
+
+    @media (min-width: $tablet) {
+      font-family: $ff-h;
+      line-height: 14px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

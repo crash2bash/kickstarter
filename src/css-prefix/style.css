@@ -87,29 +87,29 @@
     @media (min-width: 1440px) {
       .button--cart {
         width: 174px; } }
-  .button--order {
+  .button__order {
     width: 120px;
     height: 49px;
-    margin: 0 auto;
+    margin: 0;
     background-color: #333333;
     color: #fff;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
-    .button--order--outer {
-      margin-bottom: 90px; }
-    .button--order:hover, .button--order:focus {
+    .button__order--center {
+      margin: 0 auto; }
+    .button__order:hover, .button__order:focus {
       background-color: #131313; }
-    .button--order:disabled {
+    .button__order:disabled {
       opacity: 0; }
     @media (min-width: 768px) {
-      .button--order {
+      .button__order {
         position: relative;
         width: 174px;
         height: 48px;
         margin: 0;
         grid-row-start: 7; }
-        .button--order--pseudo::after {
+        .button__order--pseudo::after {
           content: "";
           position: absolute;
           width: 1px;
@@ -1434,6 +1434,8 @@
       .cart__way {
         display: block;
         margin-bottom: 90px; } }
+  .cart__container--outer {
+    margin-bottom: 90px; }
   @media (min-width: 768px) {
     .cart__container {
       display: grid;
@@ -1777,8 +1779,103 @@ input::-webkit-inner-spin-button {
       .product-card--outer {
         margin-bottom: 40px; } }
 
+.form__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 260px;
+  height: 47px;
+  padding: 5px;
+  font-family: "Helvetica Medium";
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none; }
+  @media (min-width: 768px) {
+    .form__input {
+      width: 340px; } }
+  @media (min-width: 1440px) {
+    .form__input {
+      width: 378px; } }
+  .form__input:focus, .form__input:active {
+    border-color: #0C797A; }
+  .form__input::-webkit-input-placeholder {
+    font-family: "Helvetica";
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c; }
+  .form__input::-moz-placeholder {
+    font-family: "Helvetica";
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c; }
+  .form__input:-ms-input-placeholder {
+    font-family: "Helvetica";
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c; }
+  .form__input::-ms-input-placeholder {
+    font-family: "Helvetica";
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c; }
+  .form__input::placeholder {
+    font-family: "Helvetica";
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c; }
+  .form__input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .form__input:focus::-moz-placeholder {
+    color: transparent; }
+  .form__input:focus:-ms-input-placeholder {
+    color: transparent; }
+  .form__input:focus::-ms-input-placeholder {
+    color: transparent; }
+  .form__input:focus::placeholder {
+    color: transparent; }
+  .form__input--outer {
+    margin-bottom: 29px; }
+  .form__input--outer-last {
+    margin-bottom: 50px; }
+
+.form__link {
+  font-family: "Helvetica Medium";
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4f4f4f; }
+  @media (min-width: 768px) {
+    .form__link {
+      font-family: "Helvetica";
+      line-height: 14px; } }
+
+.form__buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .shipping {
   width: 320px; }
+  .shipping--outer {
+    margin-bottom: 90px; }
+    @media (min-width: 768px) {
+      .shipping--outer {
+        margin-bottom: 130px; } }
+    @media (min-width: 1440px) {
+      .shipping--outer {
+        margin-bottom: 150px; } }
   @media (min-width: 768px) {
     .shipping {
       width: 768px; } }
@@ -1803,19 +1900,17 @@ input::-webkit-inner-spin-button {
     color: rgba(12, 121, 122, 0.3);
     font-size: 10px;
     line-height: 12px; }
-  .shipping__link {
-    margin-right: 30px;
-    font-family: "Helvetica Medium";
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #4f4f4f; }
-    @media (min-width: 768px) {
-      .shipping__link {
-        font-family: "Helvetica";
-        line-height: 14px; } }
-  .shipping__buttons {
+
+.fake-placeholder {
+  opacity: 1; }
+
+.payment {
+  width: 320px; }
+  .payment--outer {
+    margin-bottom: 90px; }
+  .payment__pictures {
+    width: 210px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1828,77 +1923,27 @@ input::-webkit-inner-spin-button {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .shipping__buttons--outer {
-      margin-bottom: 90px; }
-      @media (min-width: 768px) {
-        .shipping__buttons--outer {
-          margin-bottom: 130px; } }
-      @media (min-width: 1440px) {
-        .shipping__buttons--outer {
-          margin-bottom: 150px; } }
-
-.fake-placeholder {
-  opacity: 1; }
-
-.form__input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 260px;
-  height: 47px;
-  padding: 5px;
-  font-family: "Helvetica Medium";
-  font-size: 14px;
-  line-height: 24px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #bdbdbd;
-  outline: none; }
-  @media (min-width: 768px) {
-    .form__input {
-      width: 340px; } }
-  @media (min-width: 1440px) {
-    .form__input {
-      width: 378px; } }
-  .form__input:focus, .form__input:active {
-    border-color: #0C797A; }
-  .form__input::-webkit-input-placeholder {
-    font-size: 12px;
-    line-height: 14px; }
-  .form__input::-moz-placeholder {
-    font-size: 12px;
-    line-height: 14px; }
-  .form__input:-ms-input-placeholder {
-    font-size: 12px;
-    line-height: 14px; }
-  .form__input::-ms-input-placeholder {
-    font-size: 12px;
-    line-height: 14px; }
-  .form__input::placeholder {
-    font-size: 12px;
-    line-height: 14px; }
-  .form__input:focus::-webkit-input-placeholder {
-    color: transparent; }
-  .form__input:focus::-moz-placeholder {
-    color: transparent; }
-  .form__input:focus:-ms-input-placeholder {
-    color: transparent; }
-  .form__input:focus::-ms-input-placeholder {
-    color: transparent; }
-  .form__input:focus::placeholder {
-    color: transparent; }
-  .form__input--outer {
-    margin-bottom: 29px; }
-  .form__input--outer-last {
-    margin-bottom: 50px; }
-
-.payment {
-  width: 320px; }
+  .payment__picture--master-card {
+    width: 33px;
+    height: 25px; }
+  .payment__picture--visa {
+    width: 40px;
+    height: 22px; }
+  .payment__picture--visa {
+    width: 40px;
+    height: 22px; }
+  .payment__picture--apple {
+    width: 38px;
+    height: 15px; }
+  .payment__picture--american {
+    width: 36px;
+    height: 24px; }
   .payment__form {
     width: 260px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 70px 60px 70px 60px;
-    grid-template-rows: repeat(3, 1fr); }
+    grid-template-rows: repeat(3, 1fr) 103px; }
   .payment__fieldset {
     border: none;
     margin: 0;
@@ -1910,11 +1955,24 @@ input::-webkit-inner-spin-button {
       font-size: 10px;
       line-height: 12px;
       color: rgba(12, 121, 122, 0.3); }
+    .payment__fieldset--outer {
+      margin-bottom: 7px; }
   .payment__input--expires {
+    padding: 3px;
     margin: 0;
     width: 27px; }
   .payment__input--cvc {
     width: 70px; }
+  .payment__input::-webkit-input-placeholder {
+    color: #e0e0e0; }
+  .payment__input::-moz-placeholder {
+    color: #e0e0e0; }
+  .payment__input:-ms-input-placeholder {
+    color: #e0e0e0; }
+  .payment__input::-ms-input-placeholder {
+    color: #e0e0e0; }
+  .payment__input::placeholder {
+    color: #e0e0e0; }
   .payment__wrapper {
     width: 70px;
     display: -webkit-box;
@@ -1941,6 +1999,15 @@ input::-webkit-inner-spin-button {
   .payment__cvc {
     grid-column-start: 3;
     grid-row-start: 3; }
+  .payment__buttons {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
 
 .animation-show {
   -webkit-animation: show 1s ease-out forwards;
