@@ -14,8 +14,8 @@ const closeButton = document.querySelector(".header__close");
 const upButton = document.querySelector(".button--up");
 const inputs = document.querySelectorAll(".shipping__input");
 const placeholders = document.querySelectorAll(".shipping__placeholder");
-
 const colors = document.querySelectorAll(".cart__radio");
+const colorSignature = document.querySelector(".cart__color-signature");
 
 let inputValue = 1;
 
@@ -78,6 +78,20 @@ colors.forEach(input => {
   input.addEventListener("click", function() {
     removeBorderInput();
     input.classList.add("cart__radio--active");
+    if (input.classList.contains("cart__radio--silver")) {
+      colorSignature.innerHTML = "Silver";
+    }
+    else if (input.classList.contains("cart__radio--grey")) {
+      colorSignature.innerHTML = "Grey";
+    } else if (input.classList.contains("cart__radio--bronze")) {
+      colorSignature.innerHTML = "Bronze";
+    } else if (input.classList.contains("cart__radio--gold")) {
+      colorSignature.innerHTML = "Gold";
+    } else if (input.classList.contains("cart__radio--space")) {
+      colorSignature.innerHTML = "Space grey";
+    } else {
+      colorSignature.innerHTML = "Something wrong";
+    }
   })
 });
 
