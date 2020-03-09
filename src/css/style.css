@@ -1507,6 +1507,9 @@ input::-webkit-inner-spin-button {
     .shipping__input--outer-last {
       margin-bottom: 50px; }
   .shipping__placeholder {
+    border: none;
+    margin: 0;
+    padding: 0;
     opacity: 0;
     position: relative;
     color: rgba(12, 121, 122, 0.3);
@@ -1539,6 +1542,21 @@ input::-webkit-inner-spin-button {
 
 .fake-placeholder {
   opacity: 1; }
+
+.payment {
+  width: 320px; }
+  .payment__form {
+    width: 260px;
+    margin: 0 auto; }
+  .payment__fieldset {
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c; }
+    .payment__fieldset--focus {
+      font-size: 10px;
+      line-height: 12px;
+      color: rgba(12, 121, 122, 0.3); }
 
 .animation-show {
   animation: show 1s ease-out forwards; }

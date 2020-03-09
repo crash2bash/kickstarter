@@ -1,0 +1,14 @@
+.payment {
+  width: 320px; }
+  .payment__form {
+    width: 260px;
+    margin: 0 auto; }
+  .payment__fieldset {
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c; }
+    .payment__fieldset--focus {
+      font-size: 10px;
+      line-height: 12px;
+      color: rgba(12, 121, 122, 0.3); }
