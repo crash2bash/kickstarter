@@ -129,10 +129,16 @@
 }
 
 .show-in {
+  display: block;
   animation: showIn 0.9s ease-in-out forwards;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .show-out {
+  display: none;
   animation: showOut 0.9s ease-in-out forwards;
 }
 
@@ -156,56 +162,17 @@
   }
 }
 
-.sandwichDisappear {
-  animation: sandwichDisappear 0.5s ease-in-out forwards;
+.disappear {
+  animation: disappear 0.5s ease-in-out forwards;
 }
 
-.header-list--animation-in {
-  animation: showMobileMenu 1s ease-in-out forwards;
-}
-
-.slide-in-right {
-  animation: slide-in-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-out-left {
-  animation: slide-out-left 0.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-.slide-out-right {
-  animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-@keyframes slide-out-left {
+@keyframes disappear {
   0% {
-    transform: translateX(0);
     opacity: 1;
   }
+
   100% {
-    transform: translateX(-1000px);
     opacity: 0;
-  }
-}
-
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes showMobileMenu {
-  0% {
-    display: block;
-    transform: translate(0, -500px);
-  }
-
-  100% {
-    transform: translate(0, 0);
   }
 }
 
@@ -225,9 +192,31 @@
   animation: shake-horizontal 0.9s ease-in-out both;
 }
 
+.list-show {
+  animation: anim 0.9s ease-in-out both;
+}
+
+.list-hide {
+  animation: animOut 0.9s ease-in-out both;
+}
+
 @keyframes anim {
   0% {
-    
+    transform: translate(300px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animOut {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-300px, 0);
   }
 }
 
@@ -255,5 +244,35 @@
   }
   90% {
     transform: rotate(2deg);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
   }
 }

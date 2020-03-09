@@ -74,7 +74,6 @@
 
 .header-list {
   position: absolute;
-  z-index: 1;
   top: 68px;
   left: 0;
   width: 320px;
@@ -82,9 +81,10 @@
 
   list-style: none;
   padding: 0;
-  background-color: #4f4f4f;
+  background-color: #f7f7f7;
 
   @media (min-width: $tablet) {
+    position: static;
     width: 253px;
     margin-top: 27px;
     display: flex;
@@ -123,10 +123,6 @@
         display: block;
       }
     }
-  }
-
-  @media (min-width: $tablet) {
-    position: static;
   }
 
 

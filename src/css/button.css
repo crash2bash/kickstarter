@@ -158,4 +158,4 @@
     background-color: transparent;
     cursor: pointer; }
     .button--up:hover {
-      animation: shake-horizontal 0.9s ease-in-out both; }
+      animation: rubberBand 0.75s; }

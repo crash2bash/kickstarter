@@ -170,7 +170,7 @@
     background-color: transparent;
     cursor: pointer; }
     .button--up:hover {
-      animation: shake-horizontal 0.9s ease-in-out both; }
+      animation: rubberBand 0.75s; }
 
 @media (min-width: 768px) {
   .header {
@@ -230,16 +230,16 @@
 
 .header-list {
   position: absolute;
-  z-index: 1;
   top: 68px;
   left: 0;
   width: 320px;
   text-align: center;
   list-style: none;
   padding: 0;
-  background-color: #4f4f4f; }
+  background-color: #f7f7f7; }
   @media (min-width: 768px) {
     .header-list {
+      position: static;
       width: 253px;
       margin-top: 27px;
       display: flex;
@@ -266,9 +266,6 @@
       @media (min-width: 768px) {
         .header-list__item--none {
           display: block; } }
-  @media (min-width: 768px) {
-    .header-list {
-      position: static; } }
   .header-list__link {
     color: #333333;
     text-align: center;
@@ -721,9 +718,14 @@
     opacity: 0; } }
 
 .show-in {
+  display: block;
   animation: showIn 0.9s ease-in-out forwards; }
+  @media (min-width: 768px) {
+    .show-in {
+      display: flex; } }
 
 .show-out {
+  display: none;
   animation: showOut 0.9s ease-in-out forwards; }
 
 @keyframes showOut {
@@ -738,43 +740,14 @@
   100% {
     opacity: 1; } }
 
-.sandwichDisappear {
-  animation: sandwichDisappear 0.5s ease-in-out forwards; }
+.disappear {
+  animation: disappear 0.5s ease-in-out forwards; }
 
-.header-list--animation-in {
-  animation: showMobileMenu 1s ease-in-out forwards; }
-
-.slide-in-right {
-  animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-.slide-out-left {
-  animation: slide-out-left 0.9s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-.slide-out-right {
-  animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-@keyframes slide-out-left {
+@keyframes disappear {
   0% {
-    transform: translateX(0);
     opacity: 1; }
   100% {
-    transform: translateX(-1000px);
     opacity: 0; } }
-
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes showMobileMenu {
-  0% {
-    display: block;
-    transform: translate(0, -500px); }
-  100% {
-    transform: translate(0, 0); } }
 
 @media (min-width: 768px) {
   .scroll {
@@ -787,8 +760,23 @@
 .button--heartbeat {
   animation: shake-horizontal 0.9s ease-in-out both; }
 
+.list-show {
+  animation: anim 0.9s ease-in-out both; }
+
+.list-hide {
+  animation: animOut 0.9s ease-in-out both; }
+
 @keyframes anim {
-  0% { } }
+  0% {
+    transform: translate(300px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes animOut {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-300px, 0); } }
 
 @keyframes shake-horizontal {
   0%,
@@ -809,6 +797,22 @@
     transform: rotate(-2deg); }
   90% {
     transform: rotate(2deg); } }
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    transform: scale3d(1, 1, 1); } }
 
 .technology {
   margin-bottom: 90px; }
@@ -1484,6 +1488,93 @@ input::-webkit-inner-spin-button {
       .product-card--outer {
         margin-bottom: 40px; } }
 
+.buy {
+  position: relative;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .buy {
+      width: 430px; } }
+  @media (min-width: 1440px) {
+    .buy {
+      width: 460px; } }
+  .buy__waypoint {
+    position: relative; }
+  .buy__line {
+    position: absolute;
+    width: 103px;
+    top: 6px;
+    left: 10px; }
+    @media (min-width: 768px) {
+      .buy__line {
+        width: 165px;
+        top: 7px;
+        left: 27px; } }
+    @media (min-width: 1440px) {
+      .buy__line {
+        width: 189px;
+        left: 19px; } }
+    .buy__line--second {
+      left: 12px; }
+      @media (min-width: 768px) {
+        .buy__line--second {
+          left: 27px; } }
+    .buy__line--third {
+      width: 106px;
+      left: auto;
+      right: 31px; }
+      @media (min-width: 768px) {
+        .buy__line--third {
+          width: 185px;
+          right: 44px; } }
+      @media (min-width: 1440px) {
+        .buy__line--third {
+          width: 189px;
+          right: 50px; } }
+  .buy--outer {
+    margin: 0 auto 70px auto; }
+  .buy__dot {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 8px;
+    height: 8px;
+    background-image: url(/img/dot_disable.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .buy__dot {
+        width: 12px;
+        height: 12px; } }
+    .buy__dot--use {
+      background-image: url(/img/dot_use.svg); }
+      @media (min-width: 768px) {
+        .buy__dot--use {
+          width: 12px;
+          height: 12px; } }
+    .buy__dot--active {
+      width: 12px;
+      height: 12px;
+      background-image: url(/img/dot_active.svg); }
+      @media (min-width: 768px) {
+        .buy__dot--active {
+          width: 16px;
+          height: 16px; } }
+  .buy__point {
+    display: block;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #d0d0d0; }
+    @media (min-width: 768px) {
+      .buy__point {
+        font-size: 16px;
+        line-height: 20px; } }
+    .buy__point--active {
+      color: #4f4f4f; }
+
 .form__input {
   box-sizing: border-box;
   width: 260px;
@@ -1829,9 +1920,14 @@ input::-webkit-inner-spin-button {
     opacity: 0; } }
 
 .show-in {
+  display: block;
   animation: showIn 0.9s ease-in-out forwards; }
+  @media (min-width: 768px) {
+    .show-in {
+      display: flex; } }
 
 .show-out {
+  display: none;
   animation: showOut 0.9s ease-in-out forwards; }
 
 @keyframes showOut {
@@ -1846,43 +1942,14 @@ input::-webkit-inner-spin-button {
   100% {
     opacity: 1; } }
 
-.sandwichDisappear {
-  animation: sandwichDisappear 0.5s ease-in-out forwards; }
+.disappear {
+  animation: disappear 0.5s ease-in-out forwards; }
 
-.header-list--animation-in {
-  animation: showMobileMenu 1s ease-in-out forwards; }
-
-.slide-in-right {
-  animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-.slide-out-left {
-  animation: slide-out-left 0.9s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-.slide-out-right {
-  animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-@keyframes slide-out-left {
+@keyframes disappear {
   0% {
-    transform: translateX(0);
     opacity: 1; }
   100% {
-    transform: translateX(-1000px);
     opacity: 0; } }
-
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes showMobileMenu {
-  0% {
-    display: block;
-    transform: translate(0, -500px); }
-  100% {
-    transform: translate(0, 0); } }
 
 @media (min-width: 768px) {
   .scroll {
@@ -1895,8 +1962,23 @@ input::-webkit-inner-spin-button {
 .button--heartbeat {
   animation: shake-horizontal 0.9s ease-in-out both; }
 
+.list-show {
+  animation: anim 0.9s ease-in-out both; }
+
+.list-hide {
+  animation: animOut 0.9s ease-in-out both; }
+
 @keyframes anim {
-  0% { } }
+  0% {
+    transform: translate(300px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes animOut {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-300px, 0); } }
 
 @keyframes shake-horizontal {
   0%,
@@ -1917,6 +1999,22 @@ input::-webkit-inner-spin-button {
     transform: rotate(-2deg); }
   90% {
     transform: rotate(2deg); } }
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    transform: scale3d(1, 1, 1); } }
 
 .visually-hidden {
   position: absolute;

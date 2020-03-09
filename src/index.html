@@ -220,8 +220,21 @@
            height="26">
     </a>
     <span class="cart__close"></span>
-    <div class="cart__way">
-      CART
+    <div class="buy buy--outer">
+      <div class="buy__waypoint">
+        <span class="buy__dot buy__dot--active"></span>
+        <span class="buy__point buy__point--active">CART</span>
+      </div>
+
+      <div class="buy__waypoint">
+        <span class="buy__dot"></span>
+        <span class="buy__point">SHIPPING</span>
+      </div>
+
+      <div class="buy__waypoint">
+        <span class="buy__dot"></span>
+        <span class="buy__point ">PAYMENT</span>
+      </div>
     </div>
     <div class="cart__container cart__container--outer">
       <div class="cart__product">
@@ -278,6 +291,24 @@
   </section>
 
   <section class="shipping shipping--outer">
+    <div class="buy buy--outer">
+      <div class="buy__waypoint">
+        <span class="buy__dot buy__dot--use"></span>
+        <span class="buy__point buy__point--active">CART</span>
+      </div>
+
+      <svg class="buy__line" width="188" height="1" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#4F4F4F" d="M0 .5h188"/></svg>
+
+      <div class="buy__waypoint">
+        <span class="buy__dot buy__dot--active"></span>
+        <span class="buy__point buy__point--active">SHIPPING</span>
+      </div>
+
+      <div class="buy__waypoint">
+        <span class="buy__dot"></span>
+        <span class="buy__point ">PAYMENT</span>
+      </div>
+    </div>
     <form class="form shipping__form">
       <fieldset class="shipping__placeholder shipping__placeholder--name">
         <legend>First and Last Name *</legend>
@@ -317,6 +348,26 @@
   </section>
 
   <section class="payment payment--outer">
+    <div class="buy buy--outer">
+      <div class="buy__waypoint buy__waypoint--active">
+        <span class="buy__dot buy__dot--use"></span>
+        <span class="buy__point buy__point--active">CART</span>
+      </div>
+
+      <svg class="buy__line buy__line--second" width="188" height="1" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#4F4F4F" d="M0 .5h188"/></svg>
+
+      <div class="buy__waypoint buy__waypoint--active">
+        <span class="buy__dot buy__dot--use"></span>
+        <span class="buy__point buy__point--active">SHIPPING</span>
+      </div>
+
+      <svg class="buy__line buy__line--third" width="188" height="1" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#4F4F4F" d="M0 .5h188"/></svg>
+
+      <div class="buy__waypoint">
+        <span class="buy__dot buy__dot--active"></span>
+        <span class="buy__point buy__point--active">PAYMENT</span>
+      </div>
+    </div>
     <div class="payment__container">
       <div class="payment__pictures">
         <img class="payment__picture payment__picture--master-card" 

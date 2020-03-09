@@ -8,7 +8,7 @@ const goldSpeakerCard = document.querySelector(".product-card--gold");
 const addProductItem = document.querySelector(".cart__price-up");
 const valueOfProduct = document.querySelectorAll(".cart__value");
 const removeProductItem = document.querySelector(".cart__price-down");
-const showMobileMenu = document.querySelector(".header__sandwich");
+const sandwich = document.querySelector(".header__sandwich");
 const navigationList = document.querySelector(".header-list");
 const closeButton = document.querySelector(".header__close");
 const upButton = document.querySelector(".button--up");
@@ -16,6 +16,20 @@ const inputs = document.querySelectorAll(".shipping__input");
 const placeholders = document.querySelectorAll(".shipping__placeholder");
 
 let inputValue = 1;
+
+sandwich.addEventListener("click", function() {
+  navigationList.classList.remove("menu-close");
+  navigationList.classList.add("show-in");
+  sandwich.classList.add("disappear");
+  closeButton.classList.add("show-in");
+});
+
+closeButton.addEventListener("click", function() {
+  navigationList.classList.add("menu-close");
+  navigationList.classList.remove("show-in");
+  sandwich.classList.remove("disappear");
+  closeButton.classList.remove("show-in");
+});
 
 buyButton.addEventListener("click", function() {
   shippingPage.classList.add("cart--buy");
