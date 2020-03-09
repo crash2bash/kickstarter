@@ -15,36 +15,6 @@
     @media (min-width: 1440px) {
       .shipping__form {
         width: 378px; } }
-  .shipping__input {
-    position: relative;
-    box-sizing: border-box;
-    width: 260px;
-    height: 47px;
-    padding: 5px;
-    font-family: "Helvetica Medium";
-    font-size: 14px;
-    line-height: 24px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #bdbdbd;
-    outline: none; }
-    @media (min-width: 768px) {
-      .shipping__input {
-        width: 340px; } }
-    @media (min-width: 1440px) {
-      .shipping__input {
-        width: 378px; } }
-    .shipping__input:focus, .shipping__input:active {
-      border-color: #0C797A; }
-    .shipping__input::placeholder {
-      font-size: 12px;
-      line-height: 14px; }
-    .shipping__input:focus::placeholder {
-      color: transparent; }
-    .shipping__input--outer {
-      margin-bottom: 29px; }
-    .shipping__input--outer-last {
-      margin-bottom: 50px; }
   .shipping__placeholder {
     border: none;
     margin: 0;

@@ -2,9 +2,14 @@
   width: 320px; }
   .payment__form {
     width: 260px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70px 60px 70px 60px;
+    grid-template-rows: repeat(3, 1fr); }
   .payment__fieldset {
     border: none;
+    margin: 0;
+    padding: 0;
     font-size: 12px;
     line-height: 14px;
     color: #7c7c7c; }
@@ -12,3 +17,25 @@
       font-size: 10px;
       line-height: 12px;
       color: rgba(12, 121, 122, 0.3); }
+  .payment__input--expires {
+    margin: 0;
+    width: 27px; }
+  .payment__input--cvc {
+    width: 70px; }
+  .payment__wrapper {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .payment__holder {
+    grid-column-start: 1;
+    grid-row-start: 1; }
+  .payment__number {
+    grid-column-start: 1;
+    grid-row-start: 2; }
+  .payment__expires {
+    grid-column-start: 1;
+    grid-row-start: 3; }
+  .payment__cvc {
+    grid-column-start: 3;
+    grid-row-start: 3; }

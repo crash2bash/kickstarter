@@ -1,0 +1,50 @@
+@import "variables";
+
+.form {
+
+  &__input {
+    box-sizing: border-box;
+    width: 260px;
+    height: 47px;
+    padding: 5px;
+
+    font-family: $ff-hmedium;
+    font-size: 14px;
+    line-height: 24px;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    outline: none;
+
+    @media (min-width: $tablet) {
+      width: 340px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 378px;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #0C797A;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+      }
+
+    &--outer {
+      margin-bottom: 29px;
+    }
+
+    &--outer-last {
+      margin-bottom: 50px;
+    }
+  }
+}
