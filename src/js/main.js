@@ -14,6 +14,7 @@ const closeButton = document.querySelector(".header__close");
 const upButton = document.querySelector(".button--up");
 const inputs = document.querySelectorAll(".shipping__input");
 const placeholders = document.querySelectorAll(".shipping__placeholder");
+const colorsInputs = document.querySelectorAll(".cart__color-choose");
 const colors = document.querySelectorAll(".cart__radio");
 const colorSignature = document.querySelector(".cart__color-signature");
 
@@ -102,12 +103,6 @@ function removeBorderInput() {
     }
   })
 }
-
-// for (let input=0; input < inputs.length; input++) {
-//   inputs[input].addEventListener("focus", function() {
-//     placeholders[input].classList.add("fake-placeholder");
-//   }
-// )};
 
 inputs.forEach((input, index) => {
   input.addEventListener("focus", function() {
