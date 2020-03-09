@@ -311,52 +311,70 @@
 
       <div class="form__buttons form__buttons--outer shipping__buttons shipping__buttons--outer">
         <a href="#" class="form__link shipping__link">return to cart</a>
-        <button class="button button__order">CONTINUE</button>
+        <button class="button button__order button__form">CONTINUE</button>
       </div>
     </form>
   </section>
 
   <section class="payment payment--outer">
-    <div class="payment__pictures">
-      <img class="payment__picture payment__picture--master-card" 
-           src="img/MasterCard.png" alt="Master Card">
-      <img class="payment__picture payment__picture--visa" 
-           src="img/visa.png" alt="Visa">
-      <img class="payment__picture payment__picture--apple" 
-           src="img/apple.png" alt="Apple">
-      <img class="payment__picture payment__picture--american" 
-           src="img/american.png" alt="American Express">
-    </div>
-    <form method="get" class="payment__form form--outer">
-      <fieldset class="payment__fieldset payment__holder">
-        <legend class="legend">Card holder</legend>
-        <input type="text" class="form__input form__input--outer payment__input" placeholder="Your Name">
-      </fieldset>
-
-      <fieldset class="payment__fieldset payment__number">
-        <legend>Card number</legend>
-        <input type="text" class="form__input form__input--outer payment__input" placeholder="0000 0000 0000 0000">
-      </fieldset>
-
-      <fieldset class="payment__fieldset payment__expires">
-        <legend>Expires</legend>
-        <div class="payment__wrapper">
-          <input type="text" class="form__input form__input--outer payment__input payment__input--expires" placeholder="MM">
-          <span>/</span>
-          <input type="text" class="form__input payment__input payment__input--expires" placeholder="YY">
-        </div>
-      </fieldset>
-
-      <fieldset class="payment__fieldset payment__fieldset--outer payment__cvc">
-        <legend>CVC</legend>
-        <input type="text" class="form__input form__input--outer payment__input payment__input--cvc" placeholder="CVC">
-      </fieldset>
-
-      <div class="form__buttons form__buttons--outer payment__buttons">
-        <a href="#" class="form__link">return to shipping</a>
-        <button class="button button__order">place order</button>
+    <div class="payment__container">
+      <div class="payment__pictures">
+        <img class="payment__picture payment__picture--master-card" 
+            src="img/MasterCard.png" alt="Master Card">
+        <img class="payment__picture payment__picture--visa" 
+            src="img/visa.png" alt="Visa">
+        <img class="payment__picture payment__picture--apple" 
+            src="img/apple.png" alt="Apple">
+        <img class="payment__picture payment__picture--american" 
+            src="img/american.png" alt="American Express">
       </div>
-    </form>
+      <form method="get" class="payment__form form--outer">
+        <fieldset class="payment__fieldset payment__holder">
+          <legend class="legend">Card holder</legend>
+          <input type="text" class="form__input form__input--outer payment__input" placeholder="Your Name">
+        </fieldset>
+
+        <fieldset class="payment__fieldset payment__number">
+          <legend>Card number</legend>
+          <input type="text" class="form__input form__input--outer payment__input" placeholder="0000 0000 0000 0000">
+        </fieldset>
+
+        <fieldset class="payment__fieldset payment__expires">
+          <legend>Expires</legend>
+          <div class="payment__wrapper">
+            <input type="text" class="form__input form__input--outer payment__input payment__input--expires" placeholder="MM">
+            <span class="payment__separator">/</span>
+            <input type="text" class="form__input payment__input payment__input--expires" placeholder="YY">
+          </div>
+        </fieldset>
+
+        <fieldset class="payment__fieldset payment__fieldset--outer payment__cvc">
+          <legend>CVC</legend>
+          <input type="text" class="form__input form__input--outer payment__input payment__input--cvc" placeholder="CVC">
+        </fieldset>
+
+        <div class="form__buttons form__buttons--outer payment__buttons">
+          <a href="#" class="form__link">return to shipping</a>
+          <button class="button button__order button__form button__form--shipping">place order</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="thanks">
+    <div class="thanks__container">
+      <h3 class="thanks__title">
+        Thank you!
+      </h3>
+      <p class="thanks__text thanks__text--bold">
+        We hope you enjoy your purchase!
+      </p>
+      <p class="thanks__text">
+        Your order is proccessing. We’ll email you an update when we’ve shipping it.
+      </p>
+
+      <button class="button button__thanks">HOMEPAGE</button>
+    </div>
   </section>
 
   <footer class="footer">

@@ -1,0 +1,87 @@
+@import 'variables';
+
+.thanks {
+  width: 320px;
+
+  background-image: url(/img/thamks.svg);
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
+
+
+  &__container {
+    margin: 0 auto;
+    padding: 87px 0 90px 0;
+
+    @media (min-width: $tablet) {
+      padding: 265px 0 230px 0;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 215px 0 193px 0;
+    }
+  }
+
+  &__title {
+    width: 260px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+
+    font-size: 48px;
+    line-height: 73px;
+
+    color: #0C797A;
+
+    @media (min-width: $tablet) {
+      width: 520px;
+
+      font-size: 72px;
+      line-height: 80px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 582px;
+
+      line-height: 128px;
+    }
+  }
+
+  &__text {
+    width: 260px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: $tablet) {
+      width: 514px;
+
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 16px;
+    }
+
+    &--bold {
+      margin-bottom: 15px;
+
+      font-family: $ff-hmedium;
+      line-height: 30px;
+
+      @media (min-width: $tablet) {
+        font-size: 16px;
+        line-height: 36px;
+      }
+    }
+  }
+}

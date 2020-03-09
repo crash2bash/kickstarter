@@ -1,10 +1,17 @@
 .payment {
   width: 320px; }
+  @media (min-width: 768px) {
+    .payment {
+      width: 768px;
+      margin: 0 auto; } }
   .payment--outer {
     margin-bottom: 90px; }
+    @media (min-width: 768px) {
+      .payment--outer {
+        margin-bottom: 130px; } }
   .payment__pictures {
     width: 210px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -23,12 +30,32 @@
   .payment__picture--american {
     width: 36px;
     height: 24px; }
+  @media (min-width: 768px) {
+    .payment__container {
+      width: 520px;
+      box-sizing: border-box;
+      padding: 50px 0;
+      margin: 0 auto;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      background-color: #fff; } }
+  @media (min-width: 1440px) {
+    .payment__container {
+      width: 582px; } }
   .payment__form {
     width: 260px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 70px 60px 70px 60px;
+    grid-template-columns: 70px 50px 70px auto;
     grid-template-rows: repeat(3, 1fr) 103px; }
+    @media (min-width: 768px) {
+      .payment__form {
+        width: 340px;
+        grid-template-columns: 70px 20px 70px auto; } }
+    @media (min-width: 1440px) {
+      .payment__form {
+        width: 378px;
+        grid-template-columns: 70px 30px 70px auto; } }
   .payment__fieldset {
     border: none;
     margin: 0;
@@ -67,8 +94,17 @@
   .payment__cvc {
     grid-column-start: 3;
     grid-row-start: 3; }
+  .payment__separator {
+    color: #bdbdbd; }
   .payment__buttons {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
     flex-direction: column-reverse; }
+    @media (min-width: 768px) {
+      .payment__buttons {
+        width: 340px;
+        flex-direction: row; } }
+    @media (min-width: 1440px) {
+      .payment__buttons {
+        width: 378px; } }

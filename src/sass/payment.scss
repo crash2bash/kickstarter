@@ -3,14 +3,23 @@
 .payment {
   width: $mobile;
 
+  @media (min-width: $tablet) {
+    width: $tablet;
+    margin: 0 auto;
+  }
+
   &--outer {
     margin-bottom: 90px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 130px;
+    }
   }
 
   &__pictures {
     width: 210px;
-    margin: 0 auto;
-    
+    margin: 0 auto 30px auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,12 +52,40 @@
     }
   }
 
+  &__container {
+
+    @media (min-width: $tablet) {
+      width: 520px;
+      box-sizing: border-box;
+      padding: 50px 0;
+      margin: 0 auto;
+
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+    @media (min-width: $desktop) {
+      width: 582px;
+    }
+  }
+
   &__form {
     width: $mc-width;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 70px 60px 70px 60px;
+    grid-template-columns: 70px 50px 70px auto;
     grid-template-rows: repeat(3, 1fr) 103px;
+
+    @media (min-width: $tablet) {
+      width: 340px;
+      grid-template-columns: 70px 20px 70px auto;
+    }
+
+    @media (min-width: $desktop) {
+      width: 378px;
+      grid-template-columns: 70px 30px 70px auto;
+    }
   }
 
   &__fieldset {
@@ -115,11 +152,24 @@
     grid-row-start: 3;
   }
 
+  &__separator {
+    color: #bdbdbd;
+  }
+
   &__buttons {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
 
     flex-direction: column-reverse;
+
+    @media (min-width: $tablet) {
+      width: 340px;
+      flex-direction: row;
+    }
+
+    @media (min-width: $desktop) {
+      width: 378px;
+    }
   }
 }

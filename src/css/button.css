@@ -98,6 +98,29 @@
           transform: translate(0, -100%);
           margin-left: -49px;
           background-color: #e0e0e0; } }
+  @media (min-width: 768px) {
+    .button__form {
+      width: 160px; } }
+  @media (min-width: 1440px) {
+    .button__form {
+      width: 174px; } }
+  .button__form--shipping {
+    width: 160px; }
+    @media (min-width: 1440px) {
+      .button__form--shipping {
+        width: 174px; } }
+  .button__thanks {
+    width: 160px;
+    height: 48px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #0DB2B3;
+    background-color: transparent;
+    color: #0DB2B3; }
+    .button__thanks:hover {
+      border-color: #0C797A;
+      background-color: #0C797A;
+      color: #fff; }
   .button--fixed {
     position: fixed;
     top: 86%;
