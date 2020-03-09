@@ -15,6 +15,8 @@ const upButton = document.querySelector(".button--up");
 const inputs = document.querySelectorAll(".shipping__input");
 const placeholders = document.querySelectorAll(".shipping__placeholder");
 
+const colors = document.querySelectorAll(".cart__radio");
+
 let inputValue = 1;
 
 sandwich.addEventListener("click", function() {
@@ -71,6 +73,21 @@ upButton.addEventListener("click", function() {
     block: 'start'
   })
 });
+
+colors.forEach(input => {
+  input.addEventListener("click", function() {
+    removeBorderInput();
+    input.classList.add("cart__radio--active");
+  })
+});
+
+function removeBorderInput() {
+  colors.forEach(input => {
+    if (input.classList.contains("cart__radio--active")) {
+      input.classList.remove("cart__radio--active");
+    }
+  })
+}
 
 // for (let input=0; input < inputs.length; input++) {
 //   inputs[input].addEventListener("focus", function() {
