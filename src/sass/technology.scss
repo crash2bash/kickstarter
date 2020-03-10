@@ -17,6 +17,21 @@
     text-transform: uppercase;
   }
 
+  &__img {
+    width: 320px;
+    height: 277px;
+
+    @media (min-width: $tablet) {
+      width: 768px;
+      height: 546px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 1294px;
+      height: 546px;
+    }
+  }
+
   &__scrolling {
     margin-top: -35px;
     margin-bottom: 90px;

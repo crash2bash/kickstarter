@@ -142,9 +142,10 @@
   .cart__color-choose {
     position: absolute;
     margin: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0); }
   .cart__radio {
     width: 32px;
     height: 32px;

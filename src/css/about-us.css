@@ -11,6 +11,8 @@
     text-transform: uppercase; }
   .about-us__img {
     display: block;
+    width: 259px;
+    height: 210px;
     margin-bottom: 29px; }
   .about-us__text {
     margin-bottom: 30px;

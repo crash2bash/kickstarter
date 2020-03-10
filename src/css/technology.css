@@ -194,6 +194,17 @@
     font-size: 37px;
     line-height: 46px;
     text-transform: uppercase; }
+  .technology__img {
+    width: 320px;
+    height: 277px; }
+    @media (min-width: 768px) {
+      .technology__img {
+        width: 768px;
+        height: 546px; } }
+    @media (min-width: 1440px) {
+      .technology__img {
+        width: 1294px;
+        height: 546px; } }
   .technology__scrolling {
     margin-top: -35px;
     margin-bottom: 90px; }

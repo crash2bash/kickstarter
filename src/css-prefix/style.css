@@ -616,6 +616,8 @@
     text-transform: uppercase; }
   .about-us__img {
     display: block;
+    width: 259px;
+    height: 210px;
     margin-bottom: 29px; }
   .about-us__text {
     margin-bottom: 30px;
@@ -1069,6 +1071,17 @@
     font-size: 37px;
     line-height: 46px;
     text-transform: uppercase; }
+  .technology__img {
+    width: 320px;
+    height: 277px; }
+    @media (min-width: 768px) {
+      .technology__img {
+        width: 768px;
+        height: 546px; } }
+    @media (min-width: 1440px) {
+      .technology__img {
+        width: 1294px;
+        height: 546px; } }
   .technology__scrolling {
     margin-top: -35px;
     margin-bottom: 90px; }
@@ -1612,9 +1625,10 @@
   .cart__color-choose {
     position: absolute;
     margin: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0); }
   .cart__radio {
     width: 32px;
     height: 32px;

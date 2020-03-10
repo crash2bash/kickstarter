@@ -37,7 +37,15 @@
 
   <main>
     <section class="main-content content content--outer">
-      <img class="content__image" src="img/speaker_mobile.png" srcset="img/speaker_medium.png 768w, img/speaker_large.png 1440w" alt="Speaker">
+      <img class="content__image"
+           srcset="img/speaker_mobile.png 320w,
+                   img/speaker_medium.png 768w, 
+                   img/speaker_large.png 1440w" 
+           sizes="(max-width: 320px) 320px,
+                  (max-width: 768px) 483px,
+                  (max-width: 1440px) 939px"
+           src="img/speaker_large.png"
+           alt="Speaker">
       <h1 class="content__title">Futuristic Wireless Speaker</h1>
       <p class="content__text">
         Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctly more layered.
@@ -120,7 +128,15 @@
     <section class="about-us">
       <div class="about-us__container">
         <h2 class="about-us__title">DESIGNED FOR THE FUTURE</h2>
-        <img class="about-us__img" src="img/about.jpg" srcset="img/future_tablet.png 768w img/about_us_large.jpg 1440w" alt="Design" width="259" height="210">
+        <img class="about-us__img"
+             srcset="img/aboutus.jpg 320w,
+                     img/aboutus_medium.jpg 768w,
+                     img/aboutus_large.jpg 1440w" 
+              sizes="(max-width: 320px) 259px,
+                     (max-width: 768px) 374px,
+                     (max-width: 1440px) 582px"
+              src="img/aboutus.jpg" 
+              alt="Design">
         <p class="about-us__text">
           In 2014, a group of geeky industrial designers, engineering veterans and acoustic experts formed crazybaby. This is a bunch of passionate people who are crazy enough to think they can challenge the industry with disruptive audio products. 
         </p>
@@ -130,7 +146,24 @@
 
     <section class="technology technology--outer">
       <h2 class="technology__title">technology</h2>
-      <img src="img/technology_mob.png" alt="Our technology" class="technology__img">
+      <img srcset="img/technology1.png 320w,
+                   img/technology1_medium.png 768w,
+                   img/technology1_large.png 1440w"
+           sizes="(max-width: 320px) 320px,
+                  (max-width: 768px) 768px,
+                  (max-width: 1440px) 1294px"
+           src="img/technology1_large.png"
+           class="technology__img" alt="Our technology">
+
+                   <!-- <img class="content__image"
+             srcset="img/speaker_mobile.png 320w,
+                     img/speaker_medium.png 768w, 
+                     img/speaker_large.png 1440w" 
+             sizes="(max-width: 320px) 320px,
+                    (max-width: 768px) 483px,
+                    (max-width: 1440px) 939px"
+             src="img/speaker_large.png"
+             alt="Speaker"> -->
       <div class="technology__container">
         <div class="post-scrolling technology__scrolling">
           <div class="post-scrolling__nav">
@@ -246,7 +279,7 @@
             <input type="radio" class="cart__color-choose"
                   name="color" value="silver">
           </label>
-          
+
           <label class="cart__radio cart__radio--grey">
             <input type="radio" class="cart__color-choose"
                    name="color" value="grey">
@@ -254,7 +287,7 @@
           
           <label class="cart__radio cart__radio--bronze">
             <input type="radio" class="cart__color-choose"
-                  name="color" value="bronze">
+                   name="color" value="bronze">
           </label>
 
           <label class="cart__radio cart__radio--gold">
