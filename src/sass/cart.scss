@@ -165,6 +165,8 @@
     }
 
     @media (min-width: $desktop) {
+      width: 408px;
+      height: 361px;
       position: absolute;
       left: -70%;
       transform: translate(-70%, 0);

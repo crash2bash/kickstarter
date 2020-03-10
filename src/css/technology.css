@@ -223,6 +223,8 @@
       top: -15%;
       left: 10%; }
   .technology__review-photo {
+    width: 62px;
+    height: 62px;
     display: block;
     margin: 0 auto 20px auto; }
   .technology__review-author {

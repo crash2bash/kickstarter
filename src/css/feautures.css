@@ -43,8 +43,8 @@
   margin-bottom: 8px; }
 
 .feautures__image {
-  object-fit: cover;
-  object-position: left; }
+  width: 320px;
+  height: 222px; }
 
 @media (min-width: 768px) {
   .feautures {

@@ -147,6 +147,7 @@
   .button--up {
     display: none;
     position: fixed;
+    z-index: 3;
     top: 80%;
     left: 80%;
     width: 24px;

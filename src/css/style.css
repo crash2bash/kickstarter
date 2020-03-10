@@ -159,6 +159,7 @@
   .button--up {
     display: none;
     position: fixed;
+    z-index: 3;
     top: 80%;
     left: 80%;
     width: 24px;
@@ -857,6 +858,8 @@
       top: -15%;
       left: 10%; }
   .technology__review-photo {
+    width: 62px;
+    height: 62px;
     display: block;
     margin: 0 auto 20px auto; }
   .technology__review-author {
@@ -950,8 +953,8 @@
   margin-bottom: 8px; }
 
 .feautures__image {
-  object-fit: cover;
-  object-position: left; }
+  width: 320px;
+  height: 222px; }
 
 @media (min-width: 768px) {
   .feautures {
@@ -1298,6 +1301,8 @@
         margin-left: 85px; } }
     @media (min-width: 1440px) {
       .cart__img {
+        width: 408px;
+        height: 361px;
         position: absolute;
         left: -70%;
         transform: translate(-70%, 0); } }
